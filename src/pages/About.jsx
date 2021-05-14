@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <section className="section-about h-screen flex justify-center flex-wrap content-center">
-      <div className="u-center-text u-margin-bottom-big">
-        <h1 className="heading-secondary">About me</h1>
+    <section className="p-6">
+      <div className="m-2 flex justify-center">
+        <h1 className="text-2xl">About me</h1>
       </div>
       <div className="row">
         <div className="col col-lg-12">

@@ -2,18 +2,19 @@ import Card from "../components/Card";
 
 const Projects = () => {
   return (
-    <div className="px-6">
+    <div className="w-screen">
       <div>
         <div className="m-2 flex justify-center">
           <h1 className="text-2xl">My Projects</h1>
         </div>
 
-        <div className="flex flex-wrap justify-center content-center">
+        <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center content-center">
           <Card
             //   back={img9}
             title="Skytours"
             link="https://reizinho-skytours.netlify.com/"
             text="React"
+            background='../img/logo_me.png'
             //   git="https://github.com/lordrichard6/skytours"
           />
           <Card

@@ -1,10 +1,10 @@
 import "../styles/cards.css";
 
-const Card = ({ img, title, link, date, text }) => {
+const Card = ({ img, title, link, date, text, background }) => {
   return (
-    <div className="card box-border h-80 w-1/4 border-4 mx-4 my-4">
-      <div className="content">
-        <div className="front">
+    <div className="card h-80 w-60 min-w-max mx-4 my-4">
+      <div className="content" style={{backgroundImage: `url(${background})`}}>
+        <div className="front flex flex-wrap justify-center content-center">
           <h1>{title}</h1>
         </div>
         <div className="back">back</div>
