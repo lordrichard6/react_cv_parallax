@@ -4,8 +4,8 @@ import ReactTypingEffect from "react-typing-effect";
 import main from "../img/logo_me-min.png";
 import front from "../img/header_bg_front-min.png";
 import frontS from "../img/header_bg_md_front-min.png";
-import frontM from "../img/header_bg_front_m-min.png"
-import frontMS from "../img/header_bg_md_front_m-min.png"
+import frontM from "../img/header_bg_front_m-min.png";
+import frontMS from "../img/header_bg_md_front_m-min.png";
 import backM from "../img/header_bg_back_m-min.png";
 import backMS from "../img/header_bg_md_back_m-min.png";
 
@@ -19,26 +19,25 @@ const Header = () => {
   });
 
   return (
-    <div className="h-screen flex flex-col justify-center flex-wrap content-center bg-header-land md:bg-header-land bg-cover">
-      {/* <div className="h-screen md:h-3/4 mb-8 flex justify-center flex-wrap content-center "> */}
-        <img
-          className="h-1/2 md:h-3/4 absolute z-30"
-          src={main}
-          alt="me"
-          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
-        />
+    <div className="h-screen flex flex-col justify-center flex-wrap content-center bg-header-landS md:bg-header-land bg-cover">
+      <img
+        className="h-1/2 md:h-3/4 z-30 mb-20"
+        src={main}
+        alt="me"
+        style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+      />
       {/* </div> */}
       <img
         src={front}
         alt="front set"
         className="hidden md:block md:w-full absolute z-40"
-        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
-      <img
+      <img //Mobile
         src={frontS}
         alt="front set"
         className="block md:hidden md:w-full absolute bottom-0 z-40"
-        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <img
         src={frontM}
@@ -46,7 +45,7 @@ const Header = () => {
         className="hidden md:block w-full absolute z-20"
         style={{ transform: `translateY(${offsetY * -0.2}px)` }}
       />
-      <img
+      <img //Mobile
         src={frontMS}
         alt="front set"
         className="block md:hidden w-full absolute bottom-0 z-20"
@@ -56,32 +55,30 @@ const Header = () => {
         src={backM}
         alt="front set"
         className="hidden md:block w-full absolute z-10"
-        style={{ transform: `translateY(${offsetY * -0.1}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.2}px)` }}
       />
-      <img
+      <img //Mobile
         src={backMS}
         alt="front set"
         className="block md:hidden w-full absolute bottom-0 z-10"
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
-      {/* <div className="w-screen text-2xl xl:text-8xl text-white m-4 flex content-center justify-center"> */}
-        <ReactTypingEffect
-          className="typingeffect mt-80 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-8xl"
-          text={[
-            "My name is Paulo Reizinho",
-            "I am a developer",
-            "Welcome to my CV page",
-            "...",
-            "please UX is very simple",
-            "click on a section on the left",
-            "...",
-            "no need to stay here all day",
-          ]}
-          speed={100}
-          eraseDelay={700}
-          style={{ transform: `translateY(${offsetY * -0.2}px)` }}
-        />
-      {/* </div> */}
+      <ReactTypingEffect
+        className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl"
+        text={[
+          "My name is Paulo Reizinho",
+          "I am a developer",
+          "Welcome to my page",
+          "...",
+          "looks pretty cool i know",
+          "scroll down to see more",
+          "...",
+          "no need to stay here all day",
+        ]}
+        speed={100}
+        eraseDelay={700}
+        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
+      />
     </div>
   );
 };
