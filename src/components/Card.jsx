@@ -4,7 +4,7 @@ import "../styles/cards.css";
 
 const Card = ({ img, title, link, git, date, text }) => {
   return (
-    <div className="card h-80 w-60 min-w-max mx-4 my-4">
+    <div className="card h-80 w-60 min-w-max 2xl:w-80 2xl:h-96 m-4">
       <div className="content">
         <div
           className="front flex flex-wrap justify-center content-center bg-cover bg-bottom"

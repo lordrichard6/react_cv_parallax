@@ -1,14 +1,18 @@
-import Card from "../components/Card";
+import title from "../img/experience-min.png";
 
 const Experience = () => {
   return (
     <section className="p-6">
       <div>
-        <div className="m-2 flex justify-center">
-          <h1 className="text-2xl">Experience</h1>
+        <div className="m-6 flex justify-center">
+          <img
+            src={title}
+            alt="title"
+            className="h-20 md:w-1/3 md:h-auto z-40"
+          />
         </div>
         <div className="flex flex-wrap justify-center content-center">
-          <Card
+          {/* <Card
             // img={work1}
             title="Front Dev Intern"
             link="https://feinheit.ch/"
@@ -16,7 +20,7 @@ const Experience = () => {
             from="Aug 19"
             to="Jan 20"
             text="My first professional experience as a Front End Web Developer,  where i worked mainly with HTML and SASS but learn Python with Django which was our main tool."
-          />
+          /> */}
         </div>
       </div>
 

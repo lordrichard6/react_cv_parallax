@@ -15,7 +15,7 @@ const About = () => {
           className="h-20 md:w-1/3 md:h-auto z-40"
         />
       </div>
-      <div className="p-2 relative">
+      <div className="p-2 relative 2xl:px-40">
         <h2 className="italic tracking-widest text-2xl md:text-3xl mt-10 mb-5">
           Hey there compadres y comadres
         </h2>
