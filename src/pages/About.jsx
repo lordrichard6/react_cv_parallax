@@ -1,6 +1,6 @@
 import title from "../img/about_me-min.png";
 import me1 from "../img/about_me_02-min.png";
-import me2 from "../img/about_me_03-min.png";
+// import me2 from "../img/about_me_03-min.png";
 
 const About = () => {
   return (
