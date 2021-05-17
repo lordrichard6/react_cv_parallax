@@ -4,7 +4,7 @@ import About from "./pages/About";
 // import Experience from "./pages/Experience";
 // import Skills from "./pages/Skills";
 // import Contact from "./pages/Contact";
-// import Projects from "./pages/Projects";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -12,8 +12,8 @@ const App = () => {
       <div className="row">
         <Header />
         <About />
-        {/* <Projects />
-        <Education />
+        <Projects />
+        {/* <Education />
         <Experience />
         <Skills />
         <Contact /> */}

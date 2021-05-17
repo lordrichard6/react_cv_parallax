@@ -16,7 +16,9 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-landS md:bg-header-land bg-cover">
