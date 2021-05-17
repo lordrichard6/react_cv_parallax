@@ -19,7 +19,7 @@ const Header = () => {
   });
 
   return (
-    <div className="h-screen flex flex-col justify-center flex-wrap content-center bg-header-landS md:bg-header-land bg-cover">
+    <div className="relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-landS md:bg-header-land bg-cover">
       <img
         className="h-1/2 md:h-3/4 z-30 mb-20"
         src={main}
@@ -55,7 +55,7 @@ const Header = () => {
         src={backM}
         alt="front set"
         className="hidden md:block w-full absolute z-10"
-        style={{ transform: `translateY(${offsetY * -0.2}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
       />
       <img //Mobile
         src={backMS}
@@ -64,7 +64,7 @@ const Header = () => {
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <ReactTypingEffect
-        className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl"
+        className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 md:inset-x-auto"
         text={[
           "My name is Paulo Reizinho",
           "I am a developer",
