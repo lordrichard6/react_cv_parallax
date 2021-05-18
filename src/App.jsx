@@ -2,7 +2,7 @@ import Header from "./pages/Header";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
-import Skills from "./pages/Skills";
+// import Skills from "./pages/Skills";
 import ContactForm from "./pages/ContactForm";
 import Projects from "./pages/Projects";
 
