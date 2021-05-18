@@ -1,4 +1,6 @@
+import JobExperience from "../components/JobExperience";
 import title from "../img/experience-min.png";
+import work01 from '../img/work-1.png'
 
 const Experience = () => {
   return (
@@ -12,8 +14,17 @@ const Experience = () => {
           />
         </div>
         <div className="flex flex-wrap justify-center content-center">
+          <JobExperience
+            img={work01}
+            title="Front-end engineer"
+            link="https://feinheit.ch/"
+            company="Feinheit"
+            from="Aug 19"
+            to="Feb 20"
+            text="My first professional experience as a Front End Web Developer,  where i worked mainly with HTML and SASS but learn Python with Django which was our main tool."
+          />
           {/* <Card
-            // img={work1}
+            img={work1}
             title="Front Dev Intern"
             link="https://feinheit.ch/"
             where="Feinheit"

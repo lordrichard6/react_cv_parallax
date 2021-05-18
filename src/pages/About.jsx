@@ -26,7 +26,7 @@ const About = () => {
             later, but is never to late to create great things provided that you
             have what it takes.
             <br />
-            Let's work on you problems and find solutions, sure there will be
+            Let's work on your problems and find solutions, sure there will be
             bugs on the process but we take care of them too.
             <br />
             My main tech is React and my main focus is Front End, but give me a
