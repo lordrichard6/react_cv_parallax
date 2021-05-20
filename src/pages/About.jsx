@@ -1,21 +1,36 @@
-import React from "react";
+import { Parallax } from "react-scroll-parallax";
+import React, { useState, useEffect } from "react";
 
 import title from "../img/about_me-min.png";
 import me1 from "../img/about_me_02-min.png";
 // import me2 from "../img/about_me_03-min.png";
 
 const About = () => {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section className="h-screen p-6 mt-20 md:mt-40 mb-80">
-      <div className="flex justify-center">
-        <img
-          src={title}
-          alt="title"
-          className="h-20 md:w-1/3 md:h-auto z-40"
-        />
+    <section className="min-h-screen p-6 bg-about bg-center bg-cover">
+      <div className="flex justify-center 2xl:mt-60">
+        <Parallax
+          y={[-60, 60]}
+          x={[20, -20]}
+          className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 md:mb-10"
+        >
+          <img
+            src={title}
+            alt="title"
+          />
+        </Parallax>
       </div>
-      <div className="p-2 relative 2xl:px-40">
+      <div className="p-2 relative 2xl:px-40 mb-20">
         <h2 className="italic tracking-widest text-2xl md:text-3xl mt-10 mb-5">
           Hey there compadres y comadres
         </h2>
@@ -36,6 +51,7 @@ const About = () => {
             src={me1}
             alt="title"
             className="h-80 md:w-1/3 md:h-auto md:flex-1 2xl:flex-none rounded-full shadow-2xl"
+            style={{ transform: `translateY(${offsetY * -0.2}px)` }}
           />
 
           {/* <img src={me2} alt="title" className="" /> */}

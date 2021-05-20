@@ -1,7 +1,7 @@
 const EdSnippet = ({ img, align, title, from, to, where, text }) => {
   return (
     <div
-      className="transform hover:translate-y-1 transition duration-150 ease-in w-screen  h-80 md:h-40 border-green-600 bg-cover bg-center"
+      className="transform hover:translate-y-1 transition duration-150 ease-in m-4 w-3/4 2xl:w-1/2 h-96 md:h-44 2xl:h-40 border-green-600 rounded-xl bg-cover bg-center"
       style={{
         backgroundImage: `url(${img})`,
         justifyContent: `${align}`,

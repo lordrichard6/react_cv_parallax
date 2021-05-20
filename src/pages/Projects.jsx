@@ -1,11 +1,12 @@
+import { Parallax } from "react-scroll-parallax";
 import Card from "../components/Card";
 
 import title from "../img/projects-min.png";
+import img01 from "../img/img-01.png";
+import img02 from "../img/img-02.png";
 import img03 from "../img/img-03.jpg";
 import img04 from "../img/img-04.png";
 import img07 from "../img/img-07.png";
-import img02 from "../img/img-02.png";
-import img01 from "../img/img-01.png";
 import img08 from "../img/img-08.png";
 import img09 from "../img/img-09.jpg";
 import img10 from "../img/img-10.png";
@@ -13,16 +14,22 @@ import img11 from "../img/img-11.png";
 import img12 from "../img/img-12.png";
 
 const Projects = () => {
+
   return (
-    <section className="h-auto">
+    <section className="min-h-screen bg-projects bg-center">
       <div>
-        <div className="m-2 flex justify-center">
-          {/* <h1 className="text-2xl">My Projects</h1> */}
-          <img src={title} alt="title" className="h-20 md:w-1/3 md:h-auto" />
+        <div className=" flex justify-center">
+          <Parallax
+            y={[-60, 60]}
+            x={[-20, 20]}
+            className="h-20 md:w-1/3 md:h-auto m-20 2xl:m-40"
+          >
+            <img src={title} alt="title" />
+          </Parallax>
         </div>
 
-        <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center content-center 2xl:px-40">
-        <Card
+        <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center content-center 2xl:px-40 pb-20 2xl:pb-40">
+          <Card
             img={img12}
             title="Previous portfolio"
             link="https://reizinhocv.netlify.app/"
@@ -30,7 +37,7 @@ const Projects = () => {
             background="../img/logo_me.png"
             git="https://github.com/lordrichard6/reactCV"
           />
-        <Card
+          <Card
             img={img11}
             title="Hulu clone"
             link="https://hulu-clone-rosy.vercel.app/"

@@ -1,4 +1,5 @@
 import EdSnippet from "../components/EdSnippet";
+import { Parallax } from "react-scroll-parallax";
 
 import title from "../img/education-min.png";
 import edu1 from "../img/edu-1.jpg";
@@ -9,16 +10,18 @@ import edu5 from "../img/edu-5.jpg";
 
 const Education = () => {
   return (
-    <section className="pt-6">
+    <section className="pt-6 min-h-screen bg-education bg-center bg-cover bg-no-repeat">
       <div>
         <div className="m-6 flex justify-center">
-          <img
-            src={title}
-            alt="title"
-            className="h-20 md:w-1/3 md:h-auto z-40"
-          />
+          <Parallax
+            y={[-40, 40]}
+            x={[20, -20]}
+            className="h-20 md:w-1/3 md:h-auto mb-10 md:mt-10 2xl:mt-20 z-40"
+          >
+            <img src={title} alt="title" />
+          </Parallax>
         </div>
-        <div className="flex flex-wrap justify-center content-center">
+        <div className="flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20">
           <EdSnippet
             img={edu1}
             align={"flex-start"}
@@ -64,54 +67,6 @@ const Education = () => {
             where="Udemy"
             text="This course teaches tons of modern CSS techniques, advanced CSS animations, Flexbox layouts, CSS Grid layouts and more."
           />
-          {/* <Card
-            img={edu1}
-            title="Administration"
-            where="IEFP Portugal"
-            from="Sep 05"
-            to="Sep 08"
-            
-          />
-
-          <Card
-            img={edu2}
-            title="The Complete Web Developer in 2019 - Zero to Mastery"
-            link="https://www.udemy.com/share/101WcUB0UScVdSTHQ=/"
-            where="Udemy"
-            from="Apr 19"
-            to="Sep 19"
-            
-          />
-
-          <Card
-            img={edu3}
-            title="CS50 - Introdution to Computer Science"
-            link="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/"
-            where="EDX"
-            from="Dez 19"
-            to="Mar 20"
-            
-          />
-
-          <Card
-            img={edu5}
-            title="Modern React with redux"
-            link="https://www.udemy.com/certificate/UC-73ba9fa4-dd6f-4e58-942a-28cfa0c6a1ab/"
-            where="Udemy"
-            from="Dez 20"
-            to="Mar 21"
-            text="A very intense course with advanced concepts of REACT.js wit redux."
-          />
-
-          <Card
-            img={edu4}
-            title="Advanced CSS and Sass"
-            link="https://www.udemy.com/share/101WkwB0UScVdSTHQ=/"
-            where="Udemy"
-            from="Jan 21"
-            to="Mar 21"
-            text="This course teaches tons of modern CSS techniques, advanced CSS animations, Flexbox layouts, CSS Grid layouts and more."
-          /> */}
         </div>
       </div>
     </section>

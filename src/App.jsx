@@ -1,3 +1,4 @@
+import { ParallaxProvider } from "react-scroll-parallax";
 import Header from "./pages/Header";
 import About from "./pages/About";
 import Education from "./pages/Education";
@@ -8,8 +9,8 @@ import Projects from "./pages/Projects";
 
 const App = () => {
   return (
-    <div classeName="App">
-      <div className="row">
+    <ParallaxProvider>
+      <div classeName="App">
         <Header />
         <About />
         <Projects />
@@ -18,7 +19,7 @@ const App = () => {
         {/* <Skills /> */}
         <ContactForm />
       </div>
-    </div>
+    </ParallaxProvider>
   );
 };
 

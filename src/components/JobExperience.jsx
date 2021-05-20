@@ -3,7 +3,7 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 const JobExperience = ({ title, company, link, from, to, text }) => {
   return (
     <div
-      className="w-1/2 h-80 p-4 rounded-md bg-top"
+      className="w-3/4 md:w-1/2 h-auto md:h-40 p-4 rounded-md text-white bg-top bg-gray-400 bg-opacity-25"
       style={{
         borderLeft: "3px solid",
       }}

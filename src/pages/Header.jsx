@@ -28,7 +28,6 @@ const Header = () => {
         alt="me"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
-      {/* </div> */}
       <img
         src={front}
         alt="front set"
@@ -45,7 +44,7 @@ const Header = () => {
         src={frontM}
         alt="front set"
         className="hidden md:block w-full absolute z-20"
-        style={{ transform: `translateY(${offsetY * -0.2}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
       />
       <img //Mobile
         src={frontMS}
@@ -57,7 +56,7 @@ const Header = () => {
         src={backM}
         alt="front set"
         className="hidden md:block w-full absolute z-10"
-        style={{ transform: `translateY(${offsetY * -0.3}px)` }}
+        style={{ transform: `translateY(${offsetY * -0.2}px)` }}
       />
       <img //Mobile
         src={backMS}
