@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-landS md:bg-header-land bg-cover">
+    <div className="relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile md:bg-header-land bg-cover">
       <img
         className="h-1/2 md:h-3/4 z-30 mb-20"
         src={main}

@@ -16,7 +16,7 @@ import img12 from "../img/img-12.png";
 const Projects = () => {
 
   return (
-    <section className="min-h-screen bg-projects bg-center">
+    <section className="min-h-screen bg-projects-mobile md:bg-projects bg-center bg-cover">
       <div>
         <div className=" flex justify-center">
           <Parallax

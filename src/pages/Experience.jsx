@@ -6,7 +6,7 @@ import work01 from "../img/work-1.png";
 
 const Experience = () => {
   return (
-    <section className="p-6 min-h-screen bg-experience bg-center bg-cover">
+    <section className="p-6 min-h-screen bg-experience-mobile md:bg-experience bg-center bg-cover">
       <div>
         <div className="m-6 flex justify-center pt-10">
           <Parallax

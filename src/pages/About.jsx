@@ -17,7 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="min-h-screen p-6 bg-about bg-center bg-cover">
+    <section className="min-h-screen p-6 bg-about-mobile md:bg-about bg-center bg-cover">
       <div className="flex justify-center 2xl:mt-60">
         <Parallax
           y={[-60, 60]}

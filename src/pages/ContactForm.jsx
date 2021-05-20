@@ -28,21 +28,18 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="h-screen flex justify-center flex-wrap content-center p-6 mb:mt-2 min-h-screen bg-contact bg-center bg-cover">
+    <section className="h-screen flex justify-center flex-wrap content-center p-6 mb:mt-2 min-h-screen bg-contact-mobile md:bg-contact bg-center bg-cover">
       <div className="m-6 flex justify-center">
         <Parallax
           y={[-20, 20]}
           x={[10, -10]}
           className="h-20 md:w-1/3 md:h-auto z-40"
         >
-          <img
-            src={title}
-            alt="title"
-          />
+          <img src={title} alt="title" />
         </Parallax>
       </div>
       <form
-        className="flex flex-col w-11/12 md:h-auto md:w-1/2 p-2 border-solid border-4 rounded-xl bg-gray-600 bg-opacity-50"
+        className="flex flex-col w-11/12 md:h-auto md:w-1/2 px-2 border-solid border-4 border-blue-400 rounded-xl bg-gray-200 bg-opacity-75"
         onSubmit={onSubmit}
       >
         <TextField
@@ -71,9 +68,17 @@ const ContactForm = () => {
           rows={10}
           autocomplete="none"
         />
-        <Button className="pt-10 text-xl" type="Submit">
-          Submit
+        <div className="flex justify-center m-2">
+          <Button
+          variant="contained"
+          color="primary"
+          className="w-1/4"
+          type="Submit"
+        >
+          Send
         </Button>
+        </div>
+        
       </form>
     </section>
   );

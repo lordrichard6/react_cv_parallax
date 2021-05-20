@@ -10,7 +10,7 @@ import edu5 from "../img/edu-5.jpg";
 
 const Education = () => {
   return (
-    <section className="pt-6 min-h-screen bg-education bg-center bg-cover bg-no-repeat">
+    <section className="pt-6 min-h-screen bg-education-mobile md:bg-education bg-center bg-cover">
       <div>
         <div className="m-6 flex justify-center">
           <Parallax
