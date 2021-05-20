@@ -35,7 +35,7 @@ const About = () => {
           Hey there compadres y comadres
         </h2>
         <div className="flex flex:col flex-wrap md:flex-row justify-center">
-          <p className="md:flex-1 mb-10 md:mb-0 pt-10 leading-relaxed text-xl md:text-2xl 2xl:text-4xl">
+          <p className="md:flex-1 mb-10 md:mb-0 pt-10 leading-relaxed text-white text-xl md:text-2xl 2xl:text-4xl">
             I took Administration with focus in accounting but thing is, I love
             coding and the challenges that come with it but i found it much
             later, but is never to late to create great things provided that you
@@ -50,7 +50,7 @@ const About = () => {
           <img
             src={me1}
             alt="title"
-            className="h-80 md:w-1/3 md:h-auto md:flex-1 2xl:flex-none rounded-full shadow-2xl"
+            className="hidden md:block h-80 md:w-1/3 md:h-auto md:flex-1 2xl:flex-none rounded-full shadow-2xl"
             style={{ transform: `translateY(${offsetY * -0.2}px)` }}
           />
 
