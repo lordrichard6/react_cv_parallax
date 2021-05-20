@@ -22,7 +22,7 @@ const About = () => {
         <Parallax
           y={[-60, 60]}
           x={[20, -20]}
-          className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 md:mb-10"
+          className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 mb-12 md:mb-10"
         >
           <img
             src={title}
