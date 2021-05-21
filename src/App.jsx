@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 // import Skills from "./pages/Skills";
-import ContactForm from "./pages/ContactForm";
+import Footer from "./pages/Footer";
 import Projects from "./pages/Projects";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Education />
         <Experience />
         {/* <Skills /> */}
-        <ContactForm />
+        <Footer />
       </div>
     </ParallaxProvider>
   );

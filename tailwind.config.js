@@ -15,8 +15,8 @@ module.exports = {
         'education-mobile': "url('/src/img/forest_mobile-min.jpg')",
         'experience': "url('/src/img/fire-min.jpg')",
         'experience-mobile': "url('/src/img/fire_mobile-min.jpg')",
-        'contact': "url('/src/img/ice-min.jpg')",
-        'contact-mobile': "url('/src/img/ice_mobile-min.jpg')",
+        'contact': "linear-gradient(to bottom, rgba(2, 5, 10, 0.9), rgba(2, 5, 10, 0.9)), url('/src/img/ice-min.jpg')",
+        'contact-mobile': "linear-gradient(to bottom, rgba(2, 5, 10, 0.9), rgba(2, 5, 10, 0.9)), url('/src/img/ice_mobile-min.jpg')",
       })
     },
   },
