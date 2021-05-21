@@ -11,7 +11,7 @@ const Experience = () => {
         <div className="m-6 flex justify-center pt-10">
           <Parallax
             y={[-50, 50]}
-            x={[30, -30]}
+            x={[0, -60]}
             className="h-20 md:w-1/3 md:h-auto z-40"
           >
             <img src={title} alt="title"/>

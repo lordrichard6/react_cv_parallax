@@ -50,7 +50,7 @@ const ContactForm = () => {
   const classes = useStyles();
 
   return (
-    <footer className="h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-contact-mobile md:bg-contact bg-center bg-cover">
+    <footer className="h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-contact bg-center bg-cover">
       {/* <div className="m-6 flex justify-center">
         <Parallax
           y={[-20, 20]}
