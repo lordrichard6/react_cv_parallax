@@ -32,20 +32,23 @@ const About = () => {
       </div>
       <div className="p-2 relative 2xl:px-40 mb-20">
         <h2 className="italic tracking-widest text-2xl md:text-3xl mt-10 mb-5">
-          Hey there compadres y comadres
+          Ola pessoal,
         </h2>
         <div className="flex flex:col flex-wrap md:flex-row justify-center">
           <p className="md:flex-1 mb-10 md:mb-0 pt-10 leading-relaxed text-white text-xl md:text-2xl 2xl:text-4xl">
+            My name is Paulo Reizinho, I'm portuguese but living in Swiss land more precisely in Zurich.
             I took Administration with focus in accounting but thing is, I love
-            coding and the challenges that come with it but i found it much
+            coding and the challenges that come with it but I found it much
             later, but is never to late to create great things provided that you
             have what it takes.
             <br />
-            Let's work on your problems and find solutions, sure there will be
-            bugs on the process but we take care of them too.
+            Well, I've been learning web Development since 2019 with highs and lows, took the self-thought route
+            because my financial situation didn't allow to do a bootcamp or more. 
             <br />
-            My main tech is React and my main focus is Front End, but give me a
-            challenge and let the magic happen.
+            My main tech is React and my main focus is Front End, but my learning
+            journey will never stop.
+            <br />
+            Disclaimer, I recently got interested in blockchain and it's ecosytem.
           </p>
           <img
             src={me1}
