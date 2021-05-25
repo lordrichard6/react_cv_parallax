@@ -1,11 +1,13 @@
 import { ParallaxProvider } from "react-scroll-parallax";
-import Header from "./pages/Header";
-import About from "./pages/About";
-import Education from "./pages/Education";
-import Experience from "./pages/Experience";
+
+import Header from "pages/Header";
+import About from "pages/About";
+import Projects from "pages/Projects";
+import Education from "pages/Education";
+import Experience from "pages/Experience";
 // import Skills from "./pages/Skills";
-import Footer from "./pages/Footer";
-import Projects from "./pages/Projects";
+import Footer from "pages/Footer";
+
 
 const App = () => {
   return (

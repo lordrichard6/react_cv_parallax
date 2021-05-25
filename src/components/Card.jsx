@@ -1,6 +1,6 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-import "../styles/cards.css";
+import "styles/cards.css";
 
 const Card = ({ img, title, link, git, text }) => {
   return (

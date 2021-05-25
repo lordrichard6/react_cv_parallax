@@ -1,9 +1,8 @@
 import { Parallax } from "react-scroll-parallax";
 import React, { useState, useEffect } from "react";
 
-import title from "../img/about_me-min.png";
-import me1 from "../img/about_me_02-min.png";
-// import me2 from "../img/about_me_03-min.png";
+import title from "img/about_me-min.png";
+import me1 from "img/about_me_02-min.png";
 
 const About = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -56,8 +55,6 @@ const About = () => {
             className="hidden md:block h-80 md:w-1/3 md:h-auto md:flex-1 2xl:flex-none rounded-full shadow-2xl"
             style={{ transform: `translateY(${offsetY * -0.2}px)` }}
           />
-
-          {/* <img src={me2} alt="title" className="" /> */}
         </div>
       </div>
     </section>

@@ -1,12 +1,13 @@
-import EdSnippet from "../components/EdSnippet";
 import { Parallax } from "react-scroll-parallax";
 
-import title from "../img/education-min.png";
-import edu1 from "../img/edu-1.jpg";
-import edu2 from "../img/edu-2.jpg";
-import edu3 from "../img/edu-3.jpg";
-import edu4 from "../img/edu-4.jpg";
-import edu5 from "../img/edu-5.jpg";
+import EducationCard from "components/EducationCard";
+
+import title from "img/education-min.png";
+import edu1 from "img/edu-1.jpg";
+import edu2 from "img/edu-2.jpg";
+import edu3 from "img/edu-3.jpg";
+import edu4 from "img/edu-4.jpg";
+import edu5 from "img/edu-5.jpg";
 
 const Education = () => {
   return (
@@ -22,7 +23,7 @@ const Education = () => {
           </Parallax>
         </div>
         <div className="flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20">
-          <EdSnippet
+          <EducationCard
             img={edu1}
             align={"flex-start"}
             title="Administration"
@@ -31,7 +32,7 @@ const Education = () => {
             where="IEFP Portugal"
             text="Administration in a professional school of Ponte de Sor where studied accounting, mathematics, business, etc. and worked for a year as a intern secretary/accountant."
           />
-          <EdSnippet
+          <EducationCard
             img={edu2}
             align={"flex-end"}
             title="The Complete Web Developer in 2019 - Zero to Mastery"
@@ -40,7 +41,7 @@ const Education = () => {
             where="Udemy"
             text="Online course that gave me knowledge in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js React.js with Redux, PostgressSQL, SQL."
           />
-          <EdSnippet
+          <EducationCard
             img={edu3}
             align={"flex-start"}
             title="CS50 - Introdution to Computer Science"
@@ -49,7 +50,7 @@ const Education = () => {
             where="EDX"
             text="Excelente course which goes deep in the basic concepts of computer science such as algorithms and data structures. And also teaches C, Python and SQL."
           />
-          <EdSnippet
+          <EducationCard
             img={edu5}
             align={"flex-end"}
             title="Modern React with redux"
@@ -58,7 +59,7 @@ const Education = () => {
             where="Udemy"
             text="A very intense course with advanced concepts of REACT.js wit redux."
           />
-          <EdSnippet
+          <EducationCard
             img={edu4}
             align={"flex-start"}
             title="Advanced CSS and Sass"

@@ -1,8 +1,9 @@
 import { Parallax } from "react-scroll-parallax";
 
-import JobExperience from "../components/JobExperience";
-import title from "../img/experience-min.png";
-import work01 from "../img/work-1.png";
+import JobExperience from "components/JobExperience";
+
+import title from "img/experience-min.png";
+import work01 from "img/work-1.png";
 
 const Experience = () => {
   return (

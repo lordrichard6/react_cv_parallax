@@ -1,17 +1,18 @@
 import { Parallax } from "react-scroll-parallax";
-import Card from "../components/Card";
 
-import title from "../img/projects-min.png";
-import img01 from "../img/img-01.png";
-import img02 from "../img/img-02.png";
-import img03 from "../img/img-03.jpg";
-import img04 from "../img/img-04.png";
-import img07 from "../img/img-07.png";
-import img08 from "../img/img-08.png";
-import img09 from "../img/img-09.jpg";
-import img10 from "../img/img-10.png";
-import img11 from "../img/img-11.png";
-import img12 from "../img/img-12.png";
+import Card from "components/Card";
+
+import title from "img/projects-min.png";
+import img01 from "img/img-01.png";
+import img02 from "img/img-02.png";
+import img03 from "img/img-03.jpg";
+import img04 from "img/img-04.png";
+import img07 from "img/img-07.png";
+import img08 from "img/img-08.png";
+import img09 from "img/img-09.jpg";
+import img10 from "img/img-10.png";
+import img11 from "img/img-11.png";
+import img12 from "img/img-12.png";
 
 const Projects = () => {
 

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ReactTypingEffect from "react-typing-effect";
 
-import main from "../img/logo_me-min.png";
-import front from "../img/header_bg_front-min.png";
-import frontS from "../img/header_bg_md_front-min.png";
-import frontM from "../img/header_bg_front_m-min.png";
-import frontMS from "../img/header_bg_md_front_m-min.png";
-import backM from "../img/header_bg_back_m-min.png";
-import backMS from "../img/header_bg_md_back_m-min.png";
+import main from "img/logo_me-min.png";
+import front from "img/header_bg_front-min.png";
+import frontS from "img/header_bg_md_front-min.png";
+import frontM from "img/header_bg_front_m-min.png";
+import frontMS from "img/header_bg_md_front_m-min.png";
+import backM from "img/header_bg_back_m-min.png";
+import backMS from "img/header_bg_md_back_m-min.png";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -16,7 +16,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

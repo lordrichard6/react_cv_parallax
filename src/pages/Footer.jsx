@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+
 import { TextField, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -9,13 +10,12 @@ import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import HomeIcon from '@material-ui/icons/Home';
 import CopyrightIcon from '@material-ui/icons/Copyright';
-// import { Parallax } from "react-scroll-parallax";
 
-// import title from "../img/contact-min.png";
-import { API_KEY } from "../emailjsKey";
-import react from "../img/react.png";
-import tailwind from "../img/tailwindcss.png";
-import material from "../img/material-ui.png";
+import { API_KEY } from "emailjsKey";
+
+import react from "img/react.png";
+import tailwind from "img/tailwindcss.png";
+import material from "img/material-ui.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,16 +51,6 @@ const ContactForm = () => {
 
   return (
     <footer className="h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-contact bg-center bg-cover">
-      {/* <div className="m-6 flex justify-center">
-        <Parallax
-          y={[-20, 20]}
-          x={[10, -10]}
-          className="h-20 md:w-1/3 md:h-auto z-40"
-        >
-          <img src={title} alt="title" />
-        </Parallax>
-      </div> */}
-
       <div className="flex-1 flex flex-col flex-wrap justify-center content-center px-2 py-4">
         <h1 className="text-4xl pb-4 flex justify-center">Thank you</h1>
         <p className="text-4xl pb-4 flex justify-center">for visiting</p>
