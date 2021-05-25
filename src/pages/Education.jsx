@@ -1,6 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 
 import EducationCard from "components/EducationCard";
+import { Section, Title } from "app.styles.tw";
 
 import title from "img/education-min.png";
 import edu1 from "img/edu-1.jpg";
@@ -11,9 +12,8 @@ import edu5 from "img/edu-5.jpg";
 
 const Education = () => {
   return (
-    <section className="pt-6 min-h-screen bg-education-mobile md:bg-education bg-center bg-cover">
-      <div>
-        <div className="m-6 flex justify-center">
+    <Section className="bg-education-mobile md:bg-education">
+        <Title>
           <Parallax
             y={[-40, 40]}
             x={[20, -20]}
@@ -21,7 +21,7 @@ const Education = () => {
           >
             <img src={title} alt="title" />
           </Parallax>
-        </div>
+        </Title>
         <div className="flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20">
           <EducationCard
             img={edu1}
@@ -69,8 +69,8 @@ const Education = () => {
             text="This course teaches tons of modern CSS techniques, advanced CSS animations, Flexbox layouts, CSS Grid layouts and more."
           />
         </div>
-      </div>
-    </section>
+
+    </Section>
   );
 };
 
