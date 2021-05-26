@@ -1,7 +1,8 @@
-const EdSnippet = ({ img, align, title, from, to, where, text }) => {
+import { EdCard } from "../styles/Components";
+
+const EducationCard = ({ img, align, title, from, to, where, text }) => {
   return (
-    <div
-      className="transform hover:-translate-y-1 transition duration-150 ease-in m-4 w-3/4 2xl:w-1/2 h-96 md:h-44 2xl:h-40 border-green-600 rounded-xl shadow-2xl bg-cover bg-center"
+    <EdCard
       style={{
         backgroundImage: `url(${img})`,
         justifyContent: `${align}`,
@@ -21,8 +22,8 @@ const EdSnippet = ({ img, align, title, from, to, where, text }) => {
           <p className="text-lg">{text}</p>
         </div>
       </div>
-    </div>
+    </EdCard>
   );
 };
 
-export default EdSnippet;
+export default EducationCard;

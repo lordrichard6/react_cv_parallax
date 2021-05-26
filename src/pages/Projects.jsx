@@ -1,7 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 
 import Card from "components/Card";
-import { Section, Title } from "app.styles.tw";
+import { Section, Title, CardContainer } from "../styles/App";
 
 import title from "img/projects-min.png";
 import img01 from "img/img-01.png";
@@ -28,7 +28,7 @@ const Projects = () => {
         </Parallax>
       </Title>
 
-      <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center content-center 2xl:px-40 pb-20 2xl:pb-40">
+      <CardContainer>
         <Card
           img={img12}
           title="Previous portfolio"
@@ -103,7 +103,7 @@ const Projects = () => {
           text="Vanila JS, HTML, CSS, Game"
           git="https://github.com/lordrichard6/flappyProj"
         />
-      </div>
+      </CardContainer>
     </Section>
   );
 };

@@ -1,7 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 
 import JobExperience from "components/JobExperience";
-import { Section, Title } from "app.styles.tw";
+import { JobContainer, Section, Title } from "../styles/App";
 
 import title from "img/experience-min.png";
 import work01 from "img/work-1.png";
@@ -18,7 +18,7 @@ const Experience = () => {
             <img src={title} alt="title"/>
           </Parallax>
         </Title>
-        <div className="flex flex-wrap justify-center content-center">
+        <JobContainer>
           <JobExperience
             img={work01}
             title="Front-end engineer"
@@ -28,7 +28,7 @@ const Experience = () => {
             to="Feb 20"
             text="My first professional experience as a Front End Web Developer, where i worked mainly with HTML and SASS but learn Python with Django which was our main tool."
           />
-      </div>
+      </JobContainer>
     </Section>
   );
 };

@@ -1,7 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 import React, { useState, useEffect } from "react";
 
-import { Section, Title } from "app.styles.tw";
+import { Section, Title } from "../styles/App";
 
 import title from "img/about_me-min.png";
 import me1 from "img/about_me_02-min.png";
@@ -31,9 +31,7 @@ const About = () => {
       </Title>
 
       <div className="p-2 relative 2xl:px-40 mb-20">
-        <h2 className="italic tracking-widest text-2xl md:text-3xl mt-10 mb-5">
-          Ola pessoal,
-        </h2>
+        <h3>Ola pessoal,</h3>
         <div className="flex flex:col flex-wrap md:flex-row justify-center">
           <p className="md:flex-1 mb-10 md:mb-0 pt-10 leading-relaxed text-white text-xl md:text-2xl 2xl:text-4xl">
             My name is Paulo Reizinho, I'm portuguese but living in Swiss land

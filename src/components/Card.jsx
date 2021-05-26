@@ -1,16 +1,16 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-import "styles/cards.css";
+import { ProjectCard } from "../styles/Components";
 
 const Card = ({ img, title, link, git, text }) => {
   return (
-    <div className="card h-80 w-60 min-w-max 2xl:w-80 2xl:h-96 m-4">
+    <ProjectCard className="card">
       <div className="content shadow-inner">
         <div
-          className="front flex flex-wrap justify-center content-center bg-cover bg-bottom"
+          className="front"
           style={{ backgroundImage: `url(${img})` }}
-        ></div>
-        <div className="back text-white text-2xl flex flex-col justify-center flex-wrap content-center">
+        />
+        <div className="back">
           <a href={link} target="_blank" rel="noopener noreferrer" className="mb-2">
             {title}
           </a>
@@ -21,7 +21,7 @@ const Card = ({ img, title, link, git, text }) => {
           <p>{text}</p>
         </div>
       </div>
-    </div>
+    </ProjectCard>
   );
 };
 

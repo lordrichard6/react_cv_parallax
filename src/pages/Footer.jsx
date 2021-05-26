@@ -6,12 +6,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import HomeIcon from '@material-ui/icons/Home';
-import CopyrightIcon from '@material-ui/icons/Copyright';
+import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import HomeIcon from "@material-ui/icons/Home";
+import CopyrightIcon from "@material-ui/icons/Copyright";
 
 import { API_KEY } from "emailjsKey";
+import { Footer, FooterWrapper } from "../styles/App";
 
 import react from "img/react.png";
 import tailwind from "img/tailwindcss.png";
@@ -50,20 +51,31 @@ const ContactForm = () => {
   const classes = useStyles();
 
   return (
-    <footer className="h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-contact bg-center bg-cover">
-      <div className="flex-1 flex flex-col flex-wrap justify-center content-center px-2 py-4">
-        <h1 className="text-4xl pb-4 flex justify-center">Thank you</h1>
-        <p className="text-4xl pb-4 flex justify-center">for visiting</p>
-        <p className="text-xl p-1 flex justify-center">This website is powered by:</p>
+    <Footer className="bg-contact">
+      <FooterWrapper>
+        <h2>Thank you</h2>
+        <h2>for visiting</h2>
+        <p className="text-xl p-1 flex justify-center">
+          This website is powered by:
+        </p>
         <div className="flex flex-row justify-center py-2">
-          <img src={react} alt="reactjs" className="h-1/3 w-1/3 md:w-1/5 md:h-auto p-1" />
-          <img src={tailwind} alt="tailwindcss" className="h-1/3 w-1/3 md:w-1/5 md:h-auto p-1" />
-          <img src={material} alt="material-ui" className="h-1/3 w-1/3 md:w-1/5 md:h-auto p-1" />
+          <img
+            src={react}
+            alt="reactjs"
+          />
+          <img
+            src={tailwind}
+            alt="tailwindcss"
+          />
+          <img
+            src={material}
+            alt="material-ui"
+          />
         </div>
-      </div>
+      </FooterWrapper>
 
-      <div className="flex flex-1 flex-col flex-wrap content-center md:h-auto md:w-1/2 px-2 py-4">
-        <h1 className="text-4xl pb-4 flex justify-center">Contact me</h1>
+      <FooterWrapper>
+        <h1>Contact me</h1>
         <form onSubmit={onSubmit}>
           <TextField
             className={classes.root}
@@ -108,16 +120,15 @@ const ContactForm = () => {
             </Button>
           </div>
         </form>
-      </div>
+      </FooterWrapper>
 
-      <div className="flex-1 flex flex-col flex-wrap justify-center content-center px-2 py-4 md:h-auto">
-        <h1 className="text-4xl pb-4 flex justify-center">Social</h1>
+      <FooterWrapper>
+        <h1>Social</h1>
         <div className="flex justify-center">
           <a
             href="https://github.com/lordrichard6"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2"
           >
             <GitHubIcon fontSize="large" />
           </a>
@@ -125,7 +136,6 @@ const ContactForm = () => {
             href="https://www.linkedin.com/in/pauloreizinho/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2"
           >
             <LinkedInIcon fontSize="large" />
           </a>
@@ -133,17 +143,28 @@ const ContactForm = () => {
             href="https://www.instagram.com/l0rdr1chard/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2"
           >
             <InstagramIcon fontSize="large" />
           </a>
         </div>
-        <p className="text-xl p-1"><HomeIcon fontSize="medium" />Currently living in Zurich</p>
-        <p className="text-xl p-1"><AlternateEmailIcon fontSize="medium" />paulolopesreizinho@gmail.com</p>
-        <p className="text-xl p-1"><PhoneAndroidIcon fontSize="medium" />+41 78 798 95 33</p>
-        <p className="text-xl p-1 object-none object-bottom"><CopyrightIcon fontSize="medium" />Copyright &copy; by Paulo Reizinho</p>
-      </div>
-    </footer>
+        <p>
+          <HomeIcon fontSize="medium" />
+          Currently living in Zurich
+        </p>
+        <p>
+          <AlternateEmailIcon fontSize="medium" />
+          paulolopesreizinho@gmail.com
+        </p>
+        <p>
+          <PhoneAndroidIcon fontSize="medium" />
+          +41 78 798 95 33
+        </p>
+        <p>
+          <CopyrightIcon fontSize="medium" />
+          Copyright &copy; by Paulo Reizinho
+        </p>
+      </FooterWrapper>
+    </Footer>
   );
 };
 

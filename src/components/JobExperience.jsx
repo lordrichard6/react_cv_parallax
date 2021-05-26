@@ -1,9 +1,9 @@
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import { JobContainer } from "../styles/Components";
 
 const JobExperience = ({ title, company, link, from, to, text }) => {
   return (
-    <div
-      className="w-3/4 md:w-1/2 h-auto md:h-40 p-4 rounded-md text-white bg-top bg-gray-800 bg-opacity-75 shadow-2xl"
+    <JobContainer
       style={{
         borderLeft: "3px solid",
       }}
@@ -22,7 +22,7 @@ const JobExperience = ({ title, company, link, from, to, text }) => {
         </p>
         <p>{text}</p>
       </div>
-    </div>
+    </JobContainer>
   );
 };
 

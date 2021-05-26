@@ -17,11 +17,12 @@
     "react-typing-effect": "^2.0.5",
     "styled-components": "^5.3.0",
     "tailwind.macro": "^1.0.0-alpha.10",
+    "twin.macro": "^2.4.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "build:css": "postcss src/tailwind.css -o src/index.css",
-    "watch:css": "postcss src/tailwind.css -o src/index.css",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/index.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/index.css",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

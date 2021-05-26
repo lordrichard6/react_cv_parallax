@@ -17,6 +17,7 @@ module.exports = {
         'experience': "url('/src/img/bg_experience-min.jpg')",
         'experience-mobile': "url('/src/img/bg_experience_mobile-min.jpg')",
         'contact': "linear-gradient(to bottom, rgba(2, 5, 10, 0.9), rgba(2, 5, 10, 0.9)), url('/src/img/bg_footer-min.jpg')",
+        'CardBg':'#03446A',
       })
     },
   },
