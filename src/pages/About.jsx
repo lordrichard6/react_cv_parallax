@@ -5,6 +5,7 @@ import { Section, Title } from "../styles/App";
 
 import title from "img/about_me-min.png";
 import me1 from "img/about_me_02-min.png";
+import me from 'img/about_me_01-min.png'
 
 const About = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -30,8 +31,13 @@ const About = () => {
         </Parallax>
       </Title>
 
-      <div className="p-2 relative 2xl:px-40 mb-20">
-        <h3>Ola pessoal,</h3>
+      <div className="min-h-screen p-2 relative 2xl:px-40 mb-20 max-w-screen">
+        <div className="flex flex-row flex-wrap justify-center content-center">
+          <img src={me} className='w-1/3 filter blur-sm hover:blur-0 animate-pulse hover:animate-none transition duration-500 ease-in' alt="" />
+          <img src={me} className='w-1/3 filter blur-sm hover:blur-0 animate-pulse hover:animate-none transition duration-500 ease-in' alt="" />
+          <img src={me} className='w-1/3 filter blur-sm hover:blur-0 animate-pulse hover:animate-none transition duration-500 ease-in' alt="" />
+        </div>
+        {/* <h3>Ola pessoal,</h3>
         <div className="flex flex:col flex-wrap md:flex-row justify-center">
           <p className="md:flex-1 mb-10 md:mb-0 pt-10 leading-relaxed text-white text-xl md:text-2xl 2xl:text-4xl">
             My name is Paulo Reizinho, I'm portuguese but living in Swiss land
@@ -56,7 +62,7 @@ const About = () => {
             className="hidden md:block h-80 md:w-1/3 md:h-auto md:flex-1 2xl:flex-none rounded-full shadow-2xl"
             style={{ transform: `translateY(${offsetY * -0.2}px)` }}
           />
-        </div>
+        </div> */}
       </div>
     </Section>
   );
