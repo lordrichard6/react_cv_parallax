@@ -27,11 +27,11 @@ I like the approach of [styled components](https://styled-components.com/), beca
 Here I opted to use a dependency aswell as use useEffect hook in combination with useState that get the current position of the window element and add an onScroll function to the target element.
 
 
-### Emailjs-com
+### `Emailjs-com`
 
-For the form was used [Emailjs AP](https://www.emailjs.com/) I to allow the user to send an email directly from the site to my personal email address.
+For the form was used [Emailjs API](https://www.emailjs.com/) to allow the user to send an email directly from the site to my personal email address.
 
 
-### Deployment
+### `Deployment`
 
 The project was deployed using [Netlify](https://www.netlify.com/)
