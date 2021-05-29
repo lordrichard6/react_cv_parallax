@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 // General -------------------------------------------------------------------------------
 export const Section = styled.section.attrs({
-    className: "min-h-screen p-6 bg-center bg-cover"
+    className: "min-h-screen py-2 px-2 md:p-6 bg-center bg-cover"
 })`
     & {
         h3 {
@@ -13,7 +13,7 @@ export const Section = styled.section.attrs({
 `;
 
 export const Title = styled.div.attrs({
-    className: "flex justify-center 2xl:mt-60"
+    className: "flex justify-center 2xl:mt-40"
 })``;
 
 // Header -------------------------------------------------------------------------------
@@ -28,9 +28,7 @@ export const Hero = styled.div.attrs({
 `;
 
 // Projects -------------------------------------------------------------------------------
-export const CardContainer = styled.div.attrs({
-    className: "w-full flex flex-col sm:flex-row flex-wrap justify-center content-center 2xl:px-40 pb-20 2xl:pb-40"
-})``;
+
 
 // Education -------------------------------------------------------------------------------
 export const EducationContainer = styled.div.attrs({

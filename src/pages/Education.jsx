@@ -4,11 +4,11 @@ import EducationCard from "components/EducationCard";
 import { EducationContainer, Section, Title } from "../styles/App";
 
 import title from "img/education-min.png";
-import edu1 from "img/edu-1.jpg";
-import edu2 from "img/edu-2.jpg";
-import edu3 from "img/edu-3.jpg";
-import edu4 from "img/edu-4.jpg";
-import edu5 from "img/edu-5.jpg";
+// import edu1 from "img/edu-1.jpg";
+// import edu2 from "img/edu-2.jpg";
+// import edu3 from "img/edu-3.jpg";
+// import edu4 from "img/edu-4.jpg";
+// import edu5 from "img/edu-5.jpg";
 
 const Education = () => {
   return (
@@ -17,14 +17,14 @@ const Education = () => {
           <Parallax
             y={[-40, 40]}
             x={[20, -20]}
-            className="h-20 md:w-1/3 md:h-auto mb-10 md:mt-10 2xl:mt-20 z-40"
+            className="h-20 md:w-1/3 md:h-auto my-20 md:my10-10 2xl:mt-20 z-40"
           >
             <img src={title} alt="title" />
           </Parallax>
         </Title>
         <EducationContainer>
           <EducationCard
-            img={edu1}
+            // img={edu1}
             align={"flex-start"}
             title="Administration"
             from="Sep 05"
@@ -33,7 +33,7 @@ const Education = () => {
             text="Administration in a professional school of Ponte de Sor where studied accounting, mathematics, business, etc. and worked for a year as a intern secretary/accountant."
           />
           <EducationCard
-            img={edu2}
+            // img={edu2}
             align={"flex-end"}
             title="The Complete Web Developer in 2019 - Zero to Mastery"
             from="Apr 19"
@@ -42,7 +42,7 @@ const Education = () => {
             text="Online course that gave me knowledge in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js React.js with Redux, PostgressSQL, SQL."
           />
           <EducationCard
-            img={edu3}
+            // img={edu3}
             align={"flex-start"}
             title="CS50 - Introdution to Computer Science"
             from="Dez 19"
@@ -51,7 +51,7 @@ const Education = () => {
             text="Excelente course which goes deep in the basic concepts of computer science such as algorithms and data structures. And also teaches C, Python and SQL."
           />
           <EducationCard
-            img={edu5}
+            // img={edu5}
             align={"flex-end"}
             title="Modern React with redux"
             from="Dez 20"
@@ -60,7 +60,7 @@ const Education = () => {
             text="A very intense course with advanced concepts of REACT.js wit redux."
           />
           <EducationCard
-            img={edu4}
+            // img={edu4}
             align={"flex-start"}
             title="Advanced CSS and Sass"
             from="Jan 21"

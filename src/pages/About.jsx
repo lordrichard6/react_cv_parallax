@@ -16,9 +16,9 @@ import Popup_03 from "img/about_me_wide_03-min.png";
 import Card_mobile_01 from "img/about_me_mobile_01-min.png";
 import Card_mobile_02 from "img/about_me_mobile_02-min.png";
 import Card_mobile_03 from "img/about_me_mobile_03-min.png";
-import Popup_mobile_01 from "../img/about_me_popup_mobile_01-min.png";
-import Popup_mobile_02 from "../img/about_me_popup_mobile_02-min.png";
-import Popup_mobile_03 from "../img/about_me_popup_mobile_03-min.png";
+import Popup_mobile_01 from "img/about_me_popup_mobile_01-min.png";
+import Popup_mobile_02 from "img/about_me_popup_mobile_02-min.png";
+import Popup_mobile_03 from "img/about_me_popup_mobile_03-min.png";
 
 const About = () => {
   const [popup1, setPopup1] = useState(false);
@@ -29,7 +29,7 @@ const About = () => {
     text_01:
       "My name is Paulo Reizinho, is was born in 1986 in a small town in the middle of Africa. I currently living in Swiss land more precisely in Zurich. I took Administration with focus in accounting but thing is, I love coding and the challenges that come with it but I found it much later, but is never to late to create great things provided that you have what it takes.",
     text_02:
-      "Ok, i wasn't born in Africa but in Portugal, but the the rest is true 😆. Well, I've been learning web Development since 2019 with highs and lows, took the self-thought route because my financial situation didn't allow to do a bootcamp or more.",
+      "Ok, I wasn't born in Africa but in Portugal, but the the rest is true 😆. Well, I've been learning web Development since 2019 with highs and lows, took the self thought route because my financial situation didn't allow to do a bootcamp or more.",
     text_03:
       "My main tech is React and my main focus is Front End, but my learning journey will never stop.  Disclaimer, I recently got interested in blockchain and it's ecosytem.",
   };

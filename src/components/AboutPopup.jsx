@@ -10,7 +10,7 @@ function AboutPopup({ image, trigger, setTrigger, text }) {
             alt="me in the jungle"
             onClick={() => setTrigger(false)}
           />
-          <span className="w-full m-0 md:mx-4 md:my-2 md:w-5/12">
+          <span className="w-full m-0 md:mx-4 md:my-2 md:w-5/12 2xl:text-2xl">
             <p>{text}</p>
           </span>
         </div>

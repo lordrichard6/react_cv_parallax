@@ -4,7 +4,7 @@ import JobExperience from "components/JobExperience";
 import { JobContainer, Section, Title } from "../styles/App";
 
 import title from "img/experience-min.png";
-import work01 from "img/work-1.png";
+// import work01 from "img/work-1.png";
 
 const Experience = () => {
   return (
@@ -20,7 +20,7 @@ const Experience = () => {
         </Title>
         <JobContainer>
           <JobExperience
-            img={work01}
+            // img={work01}
             title="Front-end engineer"
             link="https://feinheit.ch/"
             company="Feinheit"
