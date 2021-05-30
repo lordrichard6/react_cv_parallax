@@ -1,4 +1,3 @@
-// import { EdCard } from "../styles/Components";
 
 const EducationCard = ({ img, title, from, to, where, text }) => {
   return (

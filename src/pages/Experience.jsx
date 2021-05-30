@@ -1,7 +1,8 @@
 import { Parallax } from "react-scroll-parallax";
+import styled from "styled-components";
 
 import JobExperience from "components/JobExperience";
-import { JobContainer, Section, Title } from "../styles/App";
+import { Section, Title } from "../styles/App";
 
 import title from "img/experience-min.png";
 // import work01 from "img/work-1.png";
@@ -34,3 +35,8 @@ const Experience = () => {
 };
 
 export default Experience;
+
+
+export const JobContainer = styled.div.attrs({
+  className: "flex flex-wrap justify-center content-center"
+})``;
