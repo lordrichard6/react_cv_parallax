@@ -74,7 +74,7 @@ const ContactForm = () => {
         </div>
       </FooterWrapper>
 
-      <FooterWrapper>
+      <FooterWrapper className="order-last md:order-none">
         <h1>Contact me</h1>
         <form onSubmit={onSubmit}>
           <TextField

@@ -31,9 +31,7 @@ export const Hero = styled.div.attrs({
 
 
 // Education -------------------------------------------------------------------------------
-export const EducationContainer = styled.div.attrs({
-    className: "flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20"
-})``;
+
 
 // Experience -------------------------------------------------------------------------------
 export const JobContainer = styled.div.attrs({

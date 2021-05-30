@@ -15,7 +15,7 @@ const Card = ({ img, title, link, git, text, size }) => {
           rel="noopener noreferrer"
           className="mb-2"
         >
-          <h2 className='md:text-xl bg-gray-600 border-2 rounded-md px-1 mx-1 animate-pulse transition duration-300 ease-in transform hover:scale-125'>{title}</h2>
+          <h2 className='md:text-xl text-black bg-white border-2 border-black rounded-md px-1 mx-1 animate-pulse transition duration-300 ease-in transform hover:scale-125'>{title}</h2>
         </a>
         <a href={git} className="animate-pulse transition duration-300 ease-in transform hover:scale-125" target="_blank" rel="noopener noreferrer">
           <GitHubIcon style={{ fontSize: 50 }}/>

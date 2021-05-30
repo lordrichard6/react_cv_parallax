@@ -142,5 +142,5 @@ export default Projects;
 // STYLE ----------------------------------------------------------------------------------------
 
 const CardContainer = styled.div.attrs({
-  className: "w-screen md:w-11/12 flex flex-col flex-wrap justify-center content-center",
+  className: "w-screen md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
 })``;
