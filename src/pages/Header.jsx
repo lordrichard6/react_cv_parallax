@@ -31,34 +31,34 @@ const Header = () => {
         alt="me"
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
       />
-      <img src={first} alt="forest" className="hidden md:block z-40" />
+      <img className="hidden md:block z-40" src={first} alt="forest" />
       <img
+        className="block md:hidden bottom-0 z-40"
         src={firstMobile}
         alt="forest mobile"
-        className="block md:hidden bottom-0 z-40"
       />
       <img
+        className="hidden md:block z-20"
         src={second}
         alt="mount"
-        className="hidden md:block z-20"
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <img
+        className="block md:hidden bottom-0 z-20"
         src={secondMobile}
         alt="mount mobile"
-        className="block md:hidden bottom-0 z-20"
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <img
+        className="hidden md:block z-10"
         src={third}
         alt="mountains"
-        className="hidden md:block z-10"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
       <img
+        className="block md:hidden bottom-0 z-10"
         src={thirdMobile}
         alt="mountains mobile"
-        className="block md:hidden bottom-0 z-10"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
       <ReactTypingEffect

@@ -21,7 +21,6 @@ const Experience = () => {
         </Title>
         <JobContainer>
           <JobExperience
-            // img={work01}
             title="Front-end engineer"
             link="https://feinheit.ch/"
             company="Feinheit"
@@ -36,7 +35,6 @@ const Experience = () => {
 
 export default Experience;
 
-
-export const JobContainer = styled.div.attrs({
+const JobContainer = styled.div.attrs({
   className: "flex flex-wrap justify-center content-center"
 })``;

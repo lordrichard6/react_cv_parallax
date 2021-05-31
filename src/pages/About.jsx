@@ -18,7 +18,7 @@ import {
   Card_mobile_03,
   Popup_mobile_01,
   Popup_mobile_02,
-  Popup_mobile_03
+  Popup_mobile_03,
 } from "./index";
 
 const About = () => {
@@ -40,21 +40,25 @@ const About = () => {
       <Title>
         <Parallax
           y={[-60, 60]}
-          x={[20, -20]}
+          x={[0, -20]}
           className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 mb-12 md:mb-10"
         >
           <img src={title_about} alt="title" />
         </Parallax>
       </Title>
 
-      <div className="min-h-screen p-2 relative 2xl:px-40 mb-20 max-w-screen">
-        <div className="hidden md:flex flex-row flex-wrap justify-center content-center">
+      <Container>
+        <Desktop>
           <AboutCard
             onClick={() => setPopup1(true)}
             src={Card_01}
             alt="me in the jungle"
           />
-          <AboutCard onClick={() => setPopup2(true)} src={Card_02} alt="sea" />
+          <AboutCard 
+            onClick={() => setPopup2(true)} 
+            src={Card_02} 
+            alt="sea" 
+          />
           <AboutCard
             onClick={() => setPopup3(true)}
             src={Card_03}
@@ -78,10 +82,10 @@ const About = () => {
             image={Popup_03}
             text={story.text_03}
           />
-        </div>
+        </Desktop>
 
         {/* MOBILE ----------------------------------------------------------------------------------------------------- */}
-        <div className="flex md:hidden flex-col flex-wrap justify-center content-center">
+        <Mobile>
           <AboutCard
             onClick={() => setPopup1(true)}
             src={Card_mobile_01}
@@ -115,13 +119,26 @@ const About = () => {
             image={Popup_mobile_03}
             text={story.text_03}
           />
-        </div>
-      </div>
+        </Mobile>
+      </Container>
     </Section>
   );
 };
 
 export default About;
+
+const Container = styled.div.attrs({
+  className:"min-h-screen p-2 relative 2xl:px-40 mb-20 max-w-screen",
+})``;
+
+const Mobile = styled.div.attrs({
+  className:"flex md:hidden flex-col flex-wrap justify-center content-center",
+})``;
+
+const Desktop = styled.div.attrs({
+  className:
+    "hidden md:flex flex-row flex-wrap justify-center content-center",
+})``;
 
 const AboutCard = styled.img.attrs({
   className:
@@ -138,8 +155,9 @@ const AboutCard = styled.img.attrs({
       50% {
         opacity: .8;
       }
-  }
-  :hover {
-    --tw-blur: blur(1px);
+    }
+    :hover {
+      --tw-blur: blur(1px);
+    }
   }
 `;

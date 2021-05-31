@@ -19,24 +19,23 @@ import {
   img10,
 } from "./index";
 
-
 const Projects = () => {
   return (
     <Section className="flex justify-center flex-wrap content-center bg-projects-mobile md:bg-projects">
       <Title>
         <Parallax
           y={[-60, 60]}
-          x={[-20, 20]}
-          className="h-20 md:w-1/3 md:h-auto my-20 2xl:m-10"
+          x={[-20, 0]}
+          className="h-20 md:w-1/3 md:h-auto my-20 2xl:m-10 overflow-x-visible"
         >
           <img src={title_projects} alt="title" />
         </Parallax>
       </Title>
 
       <CardContainer>
-        <div className="div1 w-full flex flex-row justify-center content-center">
-          <div className="div2 w-3/4 h-96 flex flex-col">
-            <div className="div3 w-full h-1/2 flex flex-row">
+        <Div1>
+          <Div2>
+            <Div3>
               <Card
                 img={img01}
                 title="Previous portfolio"
@@ -55,8 +54,8 @@ const Projects = () => {
                 git="https://github.com/lordrichard6/hulu_clone"
                 size="w-1/2 md:w-1/4"
               />
-            </div>
-            <div className="div3 w-full h-1/2 flex flex-row">
+            </Div3>
+            <Div3>
               <Card
                 img={img03}
                 title="Paul's Engine"
@@ -75,8 +74,8 @@ const Projects = () => {
                 git="https://github.com/lordrichard6/skytours"
                 size="w-1/2 md:w-3/4"
               />
-            </div>
-          </div>
+            </Div3>
+          </Div2>
           <Card
             img={img05}
             title="Monkey Circus"
@@ -85,8 +84,8 @@ const Projects = () => {
             git="https://github.com/lordrichard6/monkeycircus"
             size="w-1/2 md:w-1/4"
           />
-        </div>
-        <div className="div1 w-full flex flex-row justify-center content-center">
+        </Div1>
+        <Div1>
           <Card
             img={img06}
             title="Face Detection App"
@@ -96,8 +95,8 @@ const Projects = () => {
             size="w-1/2 md:w-1/4"
           />
 
-          <div className="div2 w-3/4 h-96 flex flex-col">
-            <div className="div3 w-full h-1/2 flex flex-row">
+          <Div2>
+            <Div3>
               <Card
                 img={img07}
                 title="RoboFriends"
@@ -114,8 +113,8 @@ const Projects = () => {
                 git="https://github.com/lordrichard6/svelte_todo"
                 size="w-1/2 md:w-3/4"
               />
-            </div>
-            <div className="div3 w-full h-1/2 flex flex-row">
+            </Div3>
+            <Div3>
               <Card
                 img={img09}
                 title="Netflix Copy"
@@ -132,9 +131,9 @@ const Projects = () => {
                 git="https://github.com/lordrichard6/flappyProj"
                 size="w-1/2 md:w-1/4"
               />
-            </div>
-          </div>
-        </div>
+            </Div3>
+          </Div2>
+        </Div1>
       </CardContainer>
     </Section>
   );
@@ -147,4 +146,16 @@ export default Projects;
 const CardContainer = styled.div.attrs({
   className:
     "w-screen md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
+})``;
+
+const Div1 = styled.div.attrs({
+  className: "div1 w-full flex flex-row justify-center content-center",
+})``;
+
+const Div2 = styled.div.attrs({
+  className: "div2 w-3/4 h-96 flex flex-col",
+})``;
+
+const Div3 = styled.div.attrs({
+  className: "div3 w-full h-1/2 flex flex-row",
 })``;

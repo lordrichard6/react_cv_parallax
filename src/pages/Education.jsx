@@ -127,24 +127,7 @@ const Education = () => {
 
 export default Education;
 
-export const EducationContainer = styled.div.attrs({
+const EducationContainer = styled.div.attrs({
   className:
     "flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20",
-})`
-  /* & {
-  .each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 350px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
-} */
-`;
+})``;
