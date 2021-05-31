@@ -1,31 +1,21 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
-import { TextField, Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import HomeIcon from "@material-ui/icons/Home";
-import CopyrightIcon from "@material-ui/icons/Copyright";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 import { API_KEY } from "emailjsKey";
-import { Footer, FooterWrapper } from "../styles/App";
 
-import react from "img/react.png";
-import tailwind from "img/tailwindcss.png";
-import material from "img/material-ui.png";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  AlternateEmailIcon,
+  PhoneAndroidIcon,
+  HomeIcon,
+  CopyrightIcon,
+} from "./index";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiFilledInput-root": {
-      background: "rgba(253, 250, 233, 0.7)",
-      color: "black",
-    },
-  },
-}));
+import { react, tailwind, material } from "./index";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -48,8 +38,6 @@ const ContactForm = () => {
     setMessage("");
   };
 
-  const classes = useStyles();
-
   return (
     <Footer className="bg-contact">
       <FooterWrapper>
@@ -59,65 +47,44 @@ const ContactForm = () => {
           This website is powered by:
         </p>
         <div className="flex flex-row justify-center py-2">
-          <img
-            src={react}
-            alt="reactjs"
-          />
-          <img
-            src={tailwind}
-            alt="tailwindcss"
-          />
-          <img
-            src={material}
-            alt="material-ui"
-          />
+          <img src={react} alt="reactjs" />
+          <img src={tailwind} alt="tailwindcss" />
+          <img src={material} alt="material-ui" />
         </div>
       </FooterWrapper>
 
-      <FooterWrapper className="order-last md:order-none">
+      <FooterWrapper className="order-first md:order-none flex flex-col">
         <h1>Contact me</h1>
         <form onSubmit={onSubmit}>
-          <TextField
-            className={classes.root}
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            label="Name"
-            fullWidth
-            autocomplete="none"
-            variant="filled"
-          />
-          <TextField
-            className={classes.root}
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            label="Email"
-            fullWidth
-            autocomplete="none"
-            variant="filled"
-          />
-          <TextField
-            className={classes.root}
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            label="Message"
-            fullWidth
-            multiline
-            rows={10}
-            autocomplete="none"
-            variant="filled"
-          />
+          <div className="border-4 border-black rounded-xl text-black">
+            <input
+              className="w-full h-10 border-b-4 border-black pl-2"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+            />
+            <input
+              className="w-full h-10 border-b-4 border-black pl-2"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+            />
+            <input
+              className="w-full h-40 pl-2"
+              type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Message"
+              rows="5"
+            />
+          </div>
+
           <div className="flex justify-center m-2">
-            <Button
-              variant="contained"
-              color="primary"
-              className="w-1/4"
-              type="Submit"
-            >
+            <button className="w-1/4" type="submit">
               Send
-            </Button>
+            </button>
           </div>
         </form>
       </FooterWrapper>
@@ -169,3 +136,37 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+export const Footer = styled.footer.attrs({
+  className:
+    "h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-center bg-cover",
+})`
+  & {
+    h1 {
+      ${tw`text-4xl pb-4 flex justify-center`}
+    }
+  }
+`;
+
+export const FooterWrapper = styled.div.attrs({
+  className:
+    "flex flex-1 flex-col flex-wrap justify-center content-center  md:h-auto md:w-1/2 px-2 py-4",
+})`
+  & {
+    h2 {
+      ${tw`text-4xl pb-4 flex justify-center`}
+    }
+
+    p {
+      ${tw`text-xl p-1`}
+    }
+
+    img {
+      ${tw`h-1/3 w-1/3 md:w-1/5 md:h-auto p-1`}
+    }
+
+    a {
+      ${tw`p-2`}
+    }
+  }
+`;

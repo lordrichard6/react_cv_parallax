@@ -5,20 +5,21 @@ import styled from "styled-components";
 import { Section, Title } from "../styles/App";
 import AboutPopup from "../components/AboutPopup";
 
-import title from "img/about_me-min.png";
-// import me1 from "img/about_me_02-min.png";
-import Card_01 from "img/about_me_01-min.png";
-import Card_02 from "img/about_me_02-min.png";
-import Card_03 from "img/about_me_03-min.png";
-import Popup_01 from "img/about_me_wide_01-min.png";
-import Popup_02 from "img/about_me_wide_02-min.png";
-import Popup_03 from "img/about_me_wide_03-min.png";
-import Card_mobile_01 from "img/about_me_mobile_01-min.png";
-import Card_mobile_02 from "img/about_me_mobile_02-min.png";
-import Card_mobile_03 from "img/about_me_mobile_03-min.png";
-import Popup_mobile_01 from "img/about_me_popup_mobile_01-min.png";
-import Popup_mobile_02 from "img/about_me_popup_mobile_02-min.png";
-import Popup_mobile_03 from "img/about_me_popup_mobile_03-min.png";
+import {
+  title_about,
+  Card_01,
+  Card_02,
+  Card_03,
+  Popup_01,
+  Popup_02,
+  Popup_03,
+  Card_mobile_01,
+  Card_mobile_02,
+  Card_mobile_03,
+  Popup_mobile_01,
+  Popup_mobile_02,
+  Popup_mobile_03
+} from "./index";
 
 const About = () => {
   const [popup1, setPopup1] = useState(false);
@@ -36,14 +37,13 @@ const About = () => {
 
   return (
     <Section className="bg-about-mobile md:bg-about">
-      {/* title */}
       <Title>
         <Parallax
           y={[-60, 60]}
           x={[20, -20]}
           className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 mb-12 md:mb-10"
         >
-          <img src={title} alt="title" />
+          <img src={title_about} alt="title" />
         </Parallax>
       </Title>
 
@@ -80,14 +80,18 @@ const About = () => {
           />
         </div>
 
-{/* MOBILE ----------------------------------------------------------------------------------------------------- */}
+        {/* MOBILE ----------------------------------------------------------------------------------------------------- */}
         <div className="flex md:hidden flex-col flex-wrap justify-center content-center">
           <AboutCard
             onClick={() => setPopup1(true)}
             src={Card_mobile_01}
             alt="me in the jungle"
           />
-          <AboutCard onClick={() => setPopup2(true)} src={Card_mobile_02} alt="sea" />
+          <AboutCard
+            onClick={() => setPopup2(true)}
+            src={Card_mobile_02}
+            alt="sea"
+          />
           <AboutCard
             onClick={() => setPopup3(true)}
             src={Card_mobile_03}
@@ -120,7 +124,8 @@ const About = () => {
 export default About;
 
 const AboutCard = styled.img.attrs({
-  className: "w-screen py-4 md:w-1/3 filter hover:animate-none transition duration-500 ease-in",
+  className:
+    "w-screen py-4 md:w-1/3 filter hover:animate-none transition duration-500 ease-in",
 })`
   & {
     animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;

@@ -5,17 +5,20 @@ import styled from "styled-components";
 import Card from "components/Card";
 import { Section, Title } from "../styles/App";
 
-import title from "img/projects-min.png";
-import img01 from "img/projects_07-min.jpg";
-import img02 from "img/projects_01-min.jpg";
-import img03 from "img/projects_02-min.jpg";
-import img04 from "img/projects_08-min.jpg";
-import img05 from "img/projects_03-min.jpg";
-import img06 from "img/projects_04-min.jpg";
-import img07 from "img/projects_05-min.jpg";
-import img08 from "img/projects_09-min.jpg";
-import img09 from "img/projects_10-min.jpg";
-import img10 from "img/projects_06-min.jpg";
+import {
+  title_projects,
+  img01,
+  img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
+  img09,
+  img10,
+} from "./index";
+
 
 const Projects = () => {
   return (
@@ -26,7 +29,7 @@ const Projects = () => {
           x={[-20, 20]}
           className="h-20 md:w-1/3 md:h-auto my-20 2xl:m-10"
         >
-          <img src={title} alt="title" />
+          <img src={title_projects} alt="title" />
         </Parallax>
       </Title>
 
@@ -109,7 +112,7 @@ const Projects = () => {
                 link="https://lordrichard-svelte-todo.netlify.com/"
                 text="Svelte 3"
                 git="https://github.com/lordrichard6/svelte_todo"
-                size='w-1/2 md:w-3/4'
+                size="w-1/2 md:w-3/4"
               />
             </div>
             <div className="div3 w-full h-1/2 flex flex-row">
@@ -119,7 +122,7 @@ const Projects = () => {
                 link="https://pauloreizinho-netflix.netlify.com/"
                 text="HTML5, CSS, JavaScript"
                 git="https://github.com/lordrichard6/netflix_landingpage"
-                size='w-1/2 md:w-3/4'
+                size="w-1/2 md:w-3/4"
               />
               <Card
                 img={img10}
@@ -142,5 +145,6 @@ export default Projects;
 // STYLE ----------------------------------------------------------------------------------------
 
 const CardContainer = styled.div.attrs({
-  className: "w-screen md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
+  className:
+    "w-screen md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
 })``;

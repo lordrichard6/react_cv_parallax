@@ -5,7 +5,7 @@ import JobExperience from "components/JobExperience";
 import { Section, Title } from "../styles/App";
 
 import title from "img/experience-min.png";
-// import work01 from "img/work-1.png";
+
 
 const Experience = () => {
   return (

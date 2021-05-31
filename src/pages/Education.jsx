@@ -6,17 +6,20 @@ import "react-slideshow-image/dist/styles.css";
 import EducationCard from "components/EducationCard";
 import { Section, Title } from "../styles/App";
 
-import title from "img/education-min.png";
-import pic01 from "img/education_01-min.jpg";
-import pic02 from "img/education_02-min.jpg";
-import pic03 from "img/education_03-min.jpg";
-import pic04 from "img/education_04-min.jpg";
-import pic05 from "img/education_05-min.jpg";
-import pic01_wide from "img/education_wide_01-min.jpg";
-import pic02_wide from "img/education_wide_02-min.jpg";
-import pic03_wide from "img/education_wide_03-min.jpg";
-import pic04_wide from "img/education_wide_04-min.jpg";
-import pic05_wide from "img/education_wide_05-min.jpg";
+import {
+  title_education,
+  pic01,
+  pic02,
+  pic03,
+  pic04,
+  pic05,
+  pic01_wide,
+  pic02_wide,
+  pic03_wide,
+  pic04_wide,
+  pic05_wide,
+} from "./index";
+
 
 const Education = () => {
   return (
@@ -27,7 +30,7 @@ const Education = () => {
           x={[20, -20]}
           className="h-20 md:w-1/3 md:h-auto my-20 md:my10-10 2xl:mt-20 z-40"
         >
-          <img src={title} alt="title" />
+          <img src={title_education} alt="title" />
         </Parallax>
       </Title>
       <EducationContainer>

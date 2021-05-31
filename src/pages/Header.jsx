@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import ReactTypingEffect from "react-typing-effect";
+import styled from "styled-components";
+import tw from "twin.macro";
 
-import { Hero } from "../styles/App";
-
-import me from "img/logo_me-min.png";
-import first from "img/header_bg_front-min.png";
-import firstMobile from "img/header_bg_md_front-min.png";
-import second from "img/header_bg_front_m-min.png";
-import secondMobile from "img/header_bg_md_front_m-min.png";
-import third from "img/header_bg_back_m-min.png";
-import thirdMobile from "img/header_bg_md_back_m-min.png";
+import {
+  me,
+  first,
+  firstMobile,
+  second,
+  secondMobile,
+  third,
+  thirdMobile,
+} from "./index";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -29,11 +31,7 @@ const Header = () => {
         alt="me"
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
       />
-      <img 
-        src={first} 
-        alt="forest" 
-        className="hidden md:block z-40" 
-      />
+      <img src={first} alt="forest" className="hidden md:block z-40" />
       <img
         src={firstMobile}
         alt="forest mobile"
@@ -84,3 +82,14 @@ const Header = () => {
 };
 
 export default Header;
+
+export const Hero = styled.div.attrs({
+  className:
+    "relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile md:bg-header-land bg-cover",
+})`
+  & {
+    img:not(:first-child) {
+      ${tw`w-full absolute`}
+    }
+  }
+`;
