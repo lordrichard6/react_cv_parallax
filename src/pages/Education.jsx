@@ -27,7 +27,7 @@ const Education = () => {
       <Title>
         <Parallax
           y={[-40, 40]}
-          x={[20, -20]}
+          x={[-20, 0]}
           className="h-20 md:w-1/3 md:h-auto my-20 md:my10-10 2xl:mt-20 z-40"
         >
           <img src={title_education} alt="title" />

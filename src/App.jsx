@@ -16,10 +16,10 @@ const App = () => {
         <Header />
         <About />
         <Projects />
-        {/* <Education /> */}
+        <Education />
         <Experience />
         {/* <Skills /> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </ParallaxProvider>
   );
