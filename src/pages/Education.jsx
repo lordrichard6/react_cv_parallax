@@ -23,16 +23,16 @@ import {
 const Education = () => {
   return (
     <Section className="bg-education">
-      <Title>
+      <Title className="md:mt-52 2xl:mt-72">
         <Parallax
           y={[-40, 40]}
-          x={[-20, 0]}
+          x={[-45, 0]}
         >
-          <h1 className='text-green-400 text-5xl'>education();</h1>
+          <h1 className='text-green-400 text-5xl md:text-7xl'>education();</h1>
         </Parallax>
       </Title>
       <EducationContainer>
-        <div className="slide-container w-4/5 rounded-md">
+        <div className="slide-container w-4/5 2xl:w-2/3ounded-md">
           <Slide easing="ease" className="contents md:hidden">
             <EducationCard
               img={pic01}

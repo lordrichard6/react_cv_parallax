@@ -4,9 +4,6 @@ import styled from "styled-components";
 import JobExperience from "components/JobExperience";
 import { Section, Title } from "../styles/App";
 
-// import title from "img/experience-min.png";
-
-
 const Experience = () => {
   return (
     <Section className="bg-experience">

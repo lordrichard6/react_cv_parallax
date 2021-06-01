@@ -37,22 +37,20 @@ const About = () => {
 
   return (
     <Section className="bg-about-mobile md:bg-about">
-      <Title>
+      <Title className="md:mt-52 2xl:mt-64">
         <Parallax
           y={[-60, 60]}
           x={[0, -20]}
           className="z-40"
         >
-          {/* <img src={title_about} alt="title" /> */}
-          <h1 className='text-pink-700 text-6xl'>about</h1>
+          <h1 className='text-pink-700 text-6xl xl:text-8xl'>about</h1>
         </Parallax>
         <Parallax
           y={[60, -60]}
           x={[0, -20]}
           className="z-40"
         >
-          {/* <img src={title_about} alt="title" /> */}
-          <h1 className='text-blue-500 text-7xl'>Me</h1>
+          <h1 className='text-blue-500 text-7xl xl:text-9xl'>Me</h1>
         </Parallax>
       </Title>
 

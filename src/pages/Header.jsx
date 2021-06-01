@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Hero>
+    <Hero className='max-h-screen'>
       <img
         className="h-1/2 md:h-3/4 z-30 mb-20"
         src={me}

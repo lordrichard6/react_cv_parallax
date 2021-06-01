@@ -22,19 +22,17 @@ import {
 const Projects = () => {
   return (
     <Section className="bg-projects">
-      <Title>
+      <Title className="md:mt-52">
         <Parallax
           y={[40, -60]}
           x={[-20, 0]}
         >
-          {/* <img src={title_projects} alt="title" /> */}
           <h1 className='text-yellow-700'>const</h1>
         </Parallax>
         <Parallax
           y={[-60, 40]}
           x={[-16, 10]}
         >
-          {/* <img src={title_projects} alt="title" /> */}
           <h1 className='text-blue-500 text-6xl'>projects</h1>
         </Parallax>
       </Title>
