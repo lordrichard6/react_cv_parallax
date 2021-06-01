@@ -6,7 +6,7 @@ import { Section, Title } from "../styles/App";
 import AboutPopup from "../components/AboutPopup";
 
 import {
-  title_about,
+  // title_about,
   Card_01,
   Card_02,
   Card_03,
@@ -41,9 +41,18 @@ const About = () => {
         <Parallax
           y={[-60, 60]}
           x={[0, -20]}
-          className="h-20 md:w-1/3 md:h-auto z-40 mt-20 md:mt-40 2xl:mt-20 mb-12 md:mb-10"
+          className="z-40"
         >
-          <img src={title_about} alt="title" />
+          {/* <img src={title_about} alt="title" /> */}
+          <h1 className='text-pink-700'>about</h1>
+        </Parallax>
+        <Parallax
+          y={[60, -60]}
+          x={[0, -20]}
+          className="z-40"
+        >
+          {/* <img src={title_about} alt="title" /> */}
+          <h1 className='text-blue-500'>Me</h1>
         </Parallax>
       </Title>
 

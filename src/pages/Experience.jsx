@@ -4,19 +4,33 @@ import styled from "styled-components";
 import JobExperience from "components/JobExperience";
 import { Section, Title } from "../styles/App";
 
-import title from "img/experience-min.png";
+// import title from "img/experience-min.png";
 
 
 const Experience = () => {
   return (
-    <Section className="bg-experience-mobile md:bg-experience">
-        <Title className="pt-10">
+    <Section className="bg-experience">
+        <Title>
           <Parallax
-            y={[-50, 50]}
-            x={[0, -60]}
-            className="h-20 md:w-1/3 md:h-auto z-40"
+            y={[-40, 10]}
+            x={[-100, 5]}
           >
-            <img src={title} alt="title"/>
+            {/* <img src={title} alt="title"/> */}
+            <h1 className='text-red-600'>{'<h1>'}</h1>
+          </Parallax>
+          <Parallax
+            y={[-45, 40]}
+            x={[-50, 0]}
+          >
+            {/* <img src={title} alt="title"/> */}
+            <h1 className='text-purple-600 md:text-6xl'>experience</h1>
+          </Parallax>
+          <Parallax
+            y={[-40, 0]}
+            x={[-100, 0]}
+          >
+            {/* <img src={title} alt="title"/> */}
+            <h1 className='text-red-600'>{'</h1>'}</h1>
           </Parallax>
         </Title>
         <JobContainer>

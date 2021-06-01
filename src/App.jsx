@@ -5,7 +5,7 @@ import About from "pages/About";
 import Projects from "pages/Projects";
 import Education from "pages/Education";
 import Experience from "pages/Experience";
-// import Skills from "./pages/Skills";
+import Skills from "./pages/Skills";
 import Footer from "pages/Footer";
 
 
@@ -18,7 +18,7 @@ const App = () => {
         <Projects />
         <Education />
         <Experience />
-        {/* <Skills /> */}
+        <Skills />
         <Footer />
       </div>
     </ParallaxProvider>

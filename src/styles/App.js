@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 // General -------------------------------------------------------------------------------
 export const Section = styled.section.attrs({
-    className: "min-h-screen py-2 px-2 md:p-6 bg-center bg-cover"
+    className: "py-2 px-2 md:p-6 bg-center bg-cover"
 })`
     & {
         h3 {
@@ -13,6 +13,8 @@ export const Section = styled.section.attrs({
 `;
 
 export const Title = styled.div.attrs({
-    className: "flex justify-center 2xl:mt-40"
-})``;
+    className: "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl md:text-9xl"
+})`
+
+`;
 

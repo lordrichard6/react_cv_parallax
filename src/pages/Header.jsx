@@ -83,7 +83,7 @@ const Header = () => {
 
 export default Header;
 
-export const Hero = styled.div.attrs({
+const Hero = styled.div.attrs({
   className:
     "relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile md:bg-header-land bg-cover",
 })`

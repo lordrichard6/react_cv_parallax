@@ -6,7 +6,7 @@ import Card from "components/Card";
 import { Section, Title } from "../styles/App";
 
 import {
-  title_projects,
+  // title_projects,
   img01,
   img02,
   img03,
@@ -21,14 +21,21 @@ import {
 
 const Projects = () => {
   return (
-    <Section className="flex justify-center flex-wrap content-center bg-projects-mobile md:bg-projects">
+    <Section className="bg-projects">
       <Title>
         <Parallax
-          y={[-60, 60]}
+          y={[40, -60]}
           x={[-20, 0]}
-          className="h-20 md:w-1/3 md:h-auto my-20 2xl:m-10 overflow-x-visible"
         >
-          <img src={title_projects} alt="title" />
+          {/* <img src={title_projects} alt="title" /> */}
+          <h1 className='text-yellow-700'>const</h1>
+        </Parallax>
+        <Parallax
+          y={[-60, 40]}
+          x={[-16, 10]}
+        >
+          {/* <img src={title_projects} alt="title" /> */}
+          <h1 className='text-blue-500'>projects</h1>
         </Parallax>
       </Title>
 
@@ -145,7 +152,7 @@ export default Projects;
 
 const CardContainer = styled.div.attrs({
   className:
-    "w-screen md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
+    "w-full md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
 })``;
 
 const Div1 = styled.div.attrs({
