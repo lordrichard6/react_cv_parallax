@@ -13,6 +13,7 @@ import {
   PhoneAndroidIcon,
   HomeIcon,
   CopyrightIcon,
+  MailIcon,
 } from "./index";
 
 import { react, tailwind, material } from "./index";
@@ -21,16 +22,28 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState('');
 
-  const onSubmit = (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
+    const statusMessage = document.querySelector('.status-message')
 
     emailjs.sendForm("gmail", "template_if9z5ob", e.target, API_KEY).then(
       (result) => {
         console.log(result.text);
+        setStatusMessage('Message sent sucessfully!')
+        statusMessage.className = 'status-message text-green-500 text-opacity-0 self-center';
+        setTimeout(() => {
+          statusMessage.className = 'status-message text-opacity-100'
+        }, 2000)
       },
       (error) => {
         console.log(error.text);
+        setStatusMessage('Failed to send message! Try again.')
+        statusMessage.className = 'status message text-red-500 text-opacity-0 self-center'
+        setTimeout(() => {
+          statusMessage.className = 'status-message text-opacity-100'
+        }, 2000)
       }
     );
     setName("");
@@ -55,11 +68,13 @@ const ContactForm = () => {
 
       <FooterWrapper className="order-first md:order-none flex flex-col">
         <h1>Contact me</h1>
-        <form onSubmit={onSubmit}>
+        <p className="status-message text-opacity-100">{statusMessage}</p>
+        <form id='contact-form' onSubmit={submitForm}>
           <div className="border-4 border-black rounded-xl text-black">
             <input
               className="w-full h-10 border-b-4 border-black pl-2"
               type="text"
+              name='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Name"
@@ -67,23 +82,25 @@ const ContactForm = () => {
             <input
               className="w-full h-10 border-b-4 border-black pl-2"
               type="email"
+              name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
             />
-            <input
+            <textarea
               className="w-full h-40 pl-2"
-              type="text"
+              name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message"
               rows="5"
+              maxLength='200'
             />
           </div>
 
           <div className="flex justify-center m-2">
-            <button className="w-1/4" type="submit">
-              Send
+            <button className="w-1/4 border-2 rounded-md bg-green-600" type="submit">
+            <MailIcon fontSize="large" />
             </button>
           </div>
         </form>

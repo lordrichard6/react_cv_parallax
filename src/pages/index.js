@@ -62,3 +62,4 @@ export { default as AlternateEmailIcon } from "@material-ui/icons/AlternateEmail
 export { default as PhoneAndroidIcon } from "@material-ui/icons/PhoneAndroid";
 export { default as HomeIcon } from "@material-ui/icons/Home";
 export { default as CopyrightIcon } from "@material-ui/icons/Copyright";
+export { default as MailIcon } from '@material-ui/icons/Mail';

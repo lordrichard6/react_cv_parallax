@@ -46,7 +46,6 @@ const Skills = () => {
           x={[1, -23]}
           className="z-40"
         >
-          {/* <img src={title_about} alt="title" /> */}
           <h1 className='text-pink-700'>if</h1>
         </Parallax>
         <Parallax
@@ -54,7 +53,6 @@ const Skills = () => {
           x={[4, -25]}
           className="z-40"
         >
-          {/* <img src={title_about} alt="title" /> */}
           <h1 className='text-blue-500 text-6xl md:text-9xl'>(skills)</h1>
         </Parallax>
         <Parallax
@@ -62,7 +60,6 @@ const Skills = () => {
           x={[-13, 10]}
           className="z-40"
         >
-          {/* <img src={title_about} alt="title" /> */}
           <h1 className='text-yellow-500'>{'{hire}'}</h1>
         </Parallax>
       </Title>
