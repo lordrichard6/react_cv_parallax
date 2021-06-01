@@ -35,7 +35,7 @@ const Projects = () => {
           x={[-16, 10]}
         >
           {/* <img src={title_projects} alt="title" /> */}
-          <h1 className='text-blue-500'>projects</h1>
+          <h1 className='text-blue-500 text-6xl'>projects</h1>
         </Parallax>
       </Title>
 

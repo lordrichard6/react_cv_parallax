@@ -19,8 +19,8 @@ const Experience = () => {
             <h1 className='text-red-600'>{'<h1>'}</h1>
           </Parallax>
           <Parallax
-            y={[-45, 40]}
-            x={[-50, 0]}
+            y={[45, -40]}
+            x={[0, -43]}
           >
             {/* <img src={title} alt="title"/> */}
             <h1 className='text-purple-600 md:text-6xl'>experience</h1>

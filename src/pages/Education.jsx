@@ -7,7 +7,6 @@ import EducationCard from "components/EducationCard";
 import { Section, Title } from "../styles/App";
 
 import {
-  // title_education,
   pic01,
   pic02,
   pic03,
@@ -29,8 +28,7 @@ const Education = () => {
           y={[-40, 40]}
           x={[-20, 0]}
         >
-          {/* <img src={title_education} alt="title" /> */}
-          <h1 className='text-green-400'>education();</h1>
+          <h1 className='text-green-400 text-5xl'>education();</h1>
         </Parallax>
       </Title>
       <EducationContainer>

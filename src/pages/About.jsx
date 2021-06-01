@@ -44,7 +44,7 @@ const About = () => {
           className="z-40"
         >
           {/* <img src={title_about} alt="title" /> */}
-          <h1 className='text-pink-700'>about</h1>
+          <h1 className='text-pink-700 text-6xl'>about</h1>
         </Parallax>
         <Parallax
           y={[60, -60]}
@@ -52,7 +52,7 @@ const About = () => {
           className="z-40"
         >
           {/* <img src={title_about} alt="title" /> */}
-          <h1 className='text-blue-500'>Me</h1>
+          <h1 className='text-blue-500 text-7xl'>Me</h1>
         </Parallax>
       </Title>
 
