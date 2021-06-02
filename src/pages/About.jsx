@@ -26,6 +26,51 @@ const About = () => {
   const [popup2, setPopup2] = useState(false);
   const [popup3, setPopup3] = useState(false);
 
+  const aboutCard = [
+    {
+      click: () => setPopup1(true),
+      src: Card_01,
+      src_m: Card_mobile_01,
+      alt: "me in the jungle"
+    },
+    {
+      click: () => setPopup2(true),
+      src: Card_02, 
+      src_m: Card_mobile_02,
+      alt: "sea", 
+    },
+    {
+      click: () => setPopup3(true),
+      src: Card_03, 
+      src_m: Card_mobile_03,
+      alt: "desert",
+    }
+  ]
+
+  const popups = [
+    {
+      trigger: popup1,
+      setTrigger: setPopup1,
+      image: Popup_01,
+      image_m: Popup_mobile_01,
+      text: story.text_01,
+    },
+    {
+      trigger: popup2,
+      setTrigger: setPopup2,
+      image: Popup_02,
+      image_m: Popup_mobile_02,
+      text: story.text_02,
+    },
+    {
+      trigger: popup3,
+      setTrigger: setPopup3,
+      image: Popup_03,
+      image_m: Popup_mobile_03,
+      text: story.text_03,
+    }
+  ]
+
   return (
     <Section className="bg-about-mobile md:bg-about">
       <Title className="md:mt-52 2xl:mt-64">
@@ -39,72 +84,56 @@ const About = () => {
 
       <Container>
         <Desktop>
-          <AboutCard
-            onClick={() => setPopup1(true)}
-            src={Card_01}
-            alt="me in the jungle"
+          {
+            aboutCard.map((n) => {
+              return (
+                <AboutCard
+                onClick={n.click}
+                src={n.src}
+                alt={n.alt}
           />
-          <AboutCard onClick={() => setPopup2(true)} src={Card_02} alt="sea" />
-          <AboutCard
-            onClick={() => setPopup3(true)}
-            src={Card_03}
-            alt="desert"
+              )
+            })
+          }
+          {
+            popups.map((n) => {
+              return (
+                <AboutPopup
+                trigger={n.trigger}
+                setTrigger={n.setTrigger}
+                image={n.image}
+                text={n.text}
           />
-          <AboutPopup
-            trigger={popup1}
-            setTrigger={setPopup1}
-            image={Popup_01}
-            text={story.text_01}
-          />
-          <AboutPopup
-            trigger={popup2}
-            setTrigger={setPopup2}
-            image={Popup_02}
-            text={story.text_02}
-          />
-          <AboutPopup
-            trigger={popup3}
-            setTrigger={setPopup3}
-            image={Popup_03}
-            text={story.text_03}
-          />
+              )
+            })
+          }
         </Desktop>
 
         {/* MOBILE ----------------------------------------------------------------------------------------------------- */}
         <Mobile>
-          <AboutCard
-            onClick={() => setPopup1(true)}
-            src={Card_mobile_01}
-            alt="me in the jungle"
+        {
+            aboutCard.map((n) => {
+              return (
+                <AboutCard
+                onClick={n.click}
+                src={n.src_m}
+                alt={n.alt}
           />
-          <AboutCard
-            onClick={() => setPopup2(true)}
-            src={Card_mobile_02}
-            alt="sea"
+              )
+            })
+          }
+          {
+            popups.map((n) => {
+              return (
+                <AboutPopup
+                trigger={n.trigger}
+                setTrigger={n.setTrigger}
+                image={n.image_m}
+                text={n.text}
           />
-          <AboutCard
-            onClick={() => setPopup3(true)}
-            src={Card_mobile_03}
-            alt="desert"
-          />
-          <AboutPopup
-            trigger={popup1}
-            setTrigger={setPopup1}
-            image={Popup_mobile_01}
-            text={story.text_01}
-          />
-          <AboutPopup
-            trigger={popup2}
-            setTrigger={setPopup2}
-            image={Popup_mobile_02}
-            text={story.text_02}
-          />
-          <AboutPopup
-            trigger={popup3}
-            setTrigger={setPopup3}
-            image={Popup_mobile_03}
-            text={story.text_03}
-          />
+              )
+            })
+          }
         </Mobile>
       </Container>
     </Section>
