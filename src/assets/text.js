@@ -1,3 +1,16 @@
+// IMPORTS
+import pic01 from "img/education_01-min.jpg";
+import pic02 from "img/education_02-min.jpg";
+import pic03 from "img/education_03-min.jpg";
+import pic04 from "img/education_04-min.jpg";
+import pic05 from "img/education_05-min.jpg";
+import pic01_wide from "img/education_wide_01-min.jpg";
+import pic02_wide from "img/education_wide_02-min.jpg";
+import pic03_wide from "img/education_wide_03-min.jpg";
+import pic04_wide from "img/education_wide_04-min.jpg";
+import pic05_wide from "img/education_wide_05-min.jpg";
+
+// TEXT ------------------------------------------------------------------------------------------
 // Header and skills ---------------------------------------------------------------
 export const parallaxText = [
   {
@@ -107,10 +120,13 @@ export const projectsInfo = [
 ]
 
 // EDUCATION ---------------------------------------------------------------
+
+
 export const courses = 
   [
     {
-    //   img: {pic01},
+      img_w: pic01_wide,
+      img_m: pic01,
       title: "Administration",
       from: "Sep 05",
       to: "Sep 08",
@@ -118,7 +134,8 @@ export const courses =
       text: "Administration in a professional school of Ponte de Sor where studied accounting, mathematics, business, etc. and worked for a year as a intern secretary/accountant."
     },
     {
-    //   img: {pic02},
+      img_w: pic02_wide,
+      img_m: pic02,
       title: "The Complete Web Developer in 2019 - Zero to Mastery",
       from: "Apr 19",
       to: "Sep 19",
@@ -126,7 +143,8 @@ export const courses =
       text: "A course with 37 hours that gave me knowledge in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js, React.js with Redux, PostgressSQL, SQL."
     },
     {
-    //   img: {pic03},
+      img_w: pic03_wide,
+      img_m: pic03,
       title: "CS50 - Introdution to Computer Science",
       from: "Dez 19",
       to: "Mar 20",
@@ -134,7 +152,8 @@ export const courses =
       text: "Excelente course which goes deep in the basic concepts of computer science such as algorithms and data structures, also C, Python and SQL."
     },
     {
-    //   img: {pic04},
+      img_w: pic04_wide,
+      img_m: pic04,
       title: "Modern React with redux",
       from: "Dez 20",
       to: "Mar 21",
@@ -142,7 +161,8 @@ export const courses =
       text: "52 hours of intense pain with advanced concepts of REACT.js with redux."
     },
     {
-    //   img: {pic05},
+      img_w: pic05_wide,
+      img_m: pic05,
       title: "Advanced CSS and Sass",
       from: "Jan 21",
       to: "Mar 21",

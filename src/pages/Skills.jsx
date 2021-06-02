@@ -57,6 +57,7 @@ const Skills = () => {
             <ReactTypingEffect
               className="typingeffect hidden md:block"
               text={[
+                // parallaxText[1].map(n => n),
                 parallaxText[1].line_01,
                 parallaxText[1].line_02,
                 parallaxText[1].line_03,
@@ -72,14 +73,14 @@ const Skills = () => {
             <ReactTypingEffect
               className="typingeffect block md:hidden font-black"
               text={[
-                "Hey there!",
-                "How are you?",
-                "Skills will evolve",
-                "Enjoy day.",
-                "Self destruct in..",
-                "1...2...3...",
-                "...",
-                "Enjoy your day.",
+                parallaxText[1].line_01,
+                parallaxText[1].line_02,
+                parallaxText[1].line_03,
+                parallaxText[1].line_04,
+                parallaxText[1].line_05,
+                parallaxText[1].line_06,
+                parallaxText[1].line_07,
+                parallaxText[1].line_08,
               ]}
               speed={100}
               eraseDelay={700}
