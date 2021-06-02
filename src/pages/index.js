@@ -50,8 +50,20 @@ export { default as pic03_wide } from "img/education_wide_03-min.jpg";
 export { default as pic04_wide } from "img/education_wide_04-min.jpg";
 export { default as pic05_wide } from "img/education_wide_05-min.jpg";
 
+// Pictures in Skills
+export { default as computer } from "img/computer-min.png";
+export { default as nokia } from "img/nokia-min.png";
+export { default as css } from "img/css-min.png";
+export { default as html } from "img/html-min.png";
+export { default as javascript } from "img/javascript-min.png";
+export { default as typescript } from "img/typescript-min.png";
+export { default as react } from "img/react-min.png";
+export { default as next } from "img/next-min.png";
+export { default as node } from "img/node-min.png";
+export { default as photoshop } from "img/photoshop-min.png"; 
+
 // Pictures and icons in Footer
-export { default as react } from "img/react.png";
+export { default as react01 } from "img/react.png";
 export { default as tailwind } from "img/tailwindcss.png";
 export { default as material } from "img/material-ui.png";
 

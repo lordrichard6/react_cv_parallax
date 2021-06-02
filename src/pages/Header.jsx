@@ -3,6 +3,8 @@ import ReactTypingEffect from "react-typing-effect";
 import styled from "styled-components";
 import tw from "twin.macro";
 
+import { parallaxText } from "assets/text";
+
 import {
   me,
   first,
@@ -24,7 +26,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Hero className='max-h-screen'>
+    <Hero className="max-h-screen">
       <img
         className="h-1/2 md:h-3/4 z-30 mb-20"
         src={me}
@@ -64,14 +66,14 @@ const Header = () => {
       <ReactTypingEffect
         className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 md:inset-x-auto"
         text={[
-          "My name is Paulo Reizinho",
-          "I am a developer",
-          "Welcome to my page",
-          "...",
-          "looks pretty cool i know",
-          "scroll down to see more",
-          "...",
-          "no need to stay here all day",
+          parallaxText[0].line_01,
+          parallaxText[0].line_02,
+          parallaxText[0].line_03,
+          parallaxText[0].line_04,
+          parallaxText[0].line_05,
+          parallaxText[0].line_06,
+          parallaxText[0].line_07,
+          parallaxText[0].line_08,
         ]}
         speed={100}
         eraseDelay={700}

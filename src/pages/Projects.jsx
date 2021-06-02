@@ -3,7 +3,8 @@ import styled from "styled-components";
 // import tw from "twin.macro";
 
 import Card from "components/Card";
-import { Section, Title } from "../styles/App";
+import { Section, Title } from "styles/App";
+import { projectsInfo } from "assets/text";
 
 import {
   // title_projects,
@@ -23,17 +24,11 @@ const Projects = () => {
   return (
     <Section className="bg-projects">
       <Title className="md:mt-52">
-        <Parallax
-          y={[40, -60]}
-          x={[-20, 0]}
-        >
-          <h1 className='text-yellow-700'>const</h1>
+        <Parallax y={[40, -60]} x={[-20, 0]}>
+          <h1 className="text-yellow-700">const</h1>
         </Parallax>
-        <Parallax
-          y={[-60, 40]}
-          x={[-16, 10]}
-        >
-          <h1 className='text-blue-500 text-6xl'>projects</h1>
+        <Parallax y={[-60, 40]} x={[-16, 10]}>
+          <h1 className="text-blue-500 text-6xl">projects</h1>
         </Parallax>
       </Title>
 
@@ -43,60 +38,56 @@ const Projects = () => {
             <Div3>
               <Card
                 img={img01}
-                title="Previous portfolio"
-                link="https://reizinhocv.netlify.app/"
-                text="React"
-                background="../img/logo_me.png"
-                git="https://github.com/lordrichard6/reactCV"
+                title={projectsInfo[0].title}
+                link={projectsInfo[0].link}
+                text={projectsInfo[0].text}
+                git={projectsInfo[0].git}
                 size="w-1/2 md:w-3/4"
               />
               <Card
                 img={img02}
-                title="Hulu clone"
-                link="https://hulu-clone-rosy.vercel.app/"
-                text="React"
-                background="../img/logo_me.png"
-                git="https://github.com/lordrichard6/hulu_clone"
+                title={projectsInfo[1].title}
+                link={projectsInfo[1].link}
+                text={projectsInfo[1].text}
+                git={projectsInfo[1].git}
                 size="w-1/2 md:w-1/4"
               />
             </Div3>
             <Div3>
               <Card
                 img={img03}
-                title="Paul's Engine"
-                link="https://paul-search.vercel.app/"
-                text="React"
-                background="../img/logo_me.png"
-                git="https://github.com/lordrichard6/paul-search"
+                title={projectsInfo[2].title}
+                link={projectsInfo[2].link}
+                text={projectsInfo[2].text}
+                git={projectsInfo[2].git}
                 size="w-1/2 md:w-1/4"
               />
               <Card
                 img={img04}
-                title="Skytours"
-                link="https://reizinho-skytours.netlify.com/"
-                text="React"
-                background="../img/logo_me.png"
-                git="https://github.com/lordrichard6/skytours"
+                title={projectsInfo[3].title}
+                link={projectsInfo[3].link}
+                text={projectsInfo[3].text}
+                git={projectsInfo[3].git}
                 size="w-1/2 md:w-3/4"
               />
             </Div3>
           </Div2>
           <Card
             img={img05}
-            title="Monkey Circus"
-            link="https://monkeycircus-2z4e865i4.now.sh"
-            text="Next.js"
-            git="https://github.com/lordrichard6/monkeycircus"
+            title={projectsInfo[4].title}
+            link={projectsInfo[4].link}
+            text={projectsInfo[4].text}
+            git={projectsInfo[4].git}
             size="w-1/2 md:w-1/4"
           />
         </Div1>
         <Div1>
           <Card
             img={img06}
-            title="Face Detection App"
-            link="https://pauloreizinho-facerecognition.netlify.com/"
-            text="React, Image recognition API"
-            git="https://github.com/lordrichard6/faceRecognition"
+            title={projectsInfo[5].title}
+            link={projectsInfo[5].link}
+            text={projectsInfo[5].text}
+            git={projectsInfo[5].git}
             size="w-1/2 md:w-1/4"
           />
 
@@ -104,36 +95,36 @@ const Projects = () => {
             <Div3>
               <Card
                 img={img07}
-                title="RoboFriends"
-                link="https://lordrichard6.github.io/robofriends/"
-                text="React"
-                git="https://github.com/lordrichard6/robofriends"
+                title={projectsInfo[6].title}
+                link={projectsInfo[6].link}
+                text={projectsInfo[6].text}
+                git={projectsInfo[6].git}
                 size="w-1/2 md:w-1/4"
               />
               <Card
                 img={img08}
-                title="To Do"
-                link="https://lordrichard-svelte-todo.netlify.com/"
-                text="Svelte 3"
-                git="https://github.com/lordrichard6/svelte_todo"
+                title={projectsInfo[7].title}
+                link={projectsInfo[7].link}
+                text={projectsInfo[7].text}
+                git={projectsInfo[7].git}
                 size="w-1/2 md:w-3/4"
               />
             </Div3>
             <Div3>
               <Card
                 img={img09}
-                title="Netflix Copy"
-                link="https://pauloreizinho-netflix.netlify.com/"
-                text="HTML5, CSS, JavaScript"
-                git="https://github.com/lordrichard6/netflix_landingpage"
+                title={projectsInfo[8].title}
+                link={projectsInfo[8].link}
+                text={projectsInfo[8].text}
+                git={projectsInfo[8].git}
                 size="w-1/2 md:w-3/4"
               />
               <Card
                 img={img10}
-                title="FlappyBird"
-                link="https://pauloreizinho-flappybird.netlify.com/"
-                text="Vanila JS, HTML, CSS, Game"
-                git="https://github.com/lordrichard6/flappyProj"
+                title={projectsInfo[9].title}
+                link={projectsInfo[9].link}
+                text={projectsInfo[9].text}
+                git={projectsInfo[9].git}
                 size="w-1/2 md:w-1/4"
               />
             </Div3>

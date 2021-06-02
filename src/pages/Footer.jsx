@@ -16,7 +16,7 @@ import {
   MailIcon,
 } from "./index";
 
-import { react, tailwind, material } from "./index";
+import { react01, tailwind, material } from "./index";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -62,7 +62,7 @@ const ContactForm = () => {
           This website is powered by:
         </p>
         <div className="flex flex-row justify-center py-2">
-          <img src={react} alt="reactjs" />
+          <img src={react01} alt="reactjs" />
           <img src={tailwind} alt="tailwindcss" />
           <img src={material} alt="material-ui" />
         </div>
