@@ -1,14 +1,28 @@
 // IMPORTS
-import pic01 from "img/education_01-min.jpg";
-import pic02 from "img/education_02-min.jpg";
-import pic03 from "img/education_03-min.jpg";
-import pic04 from "img/education_04-min.jpg";
-import pic05 from "img/education_05-min.jpg";
-import pic01_wide from "img/education_wide_01-min.jpg";
-import pic02_wide from "img/education_wide_02-min.jpg";
-import pic03_wide from "img/education_wide_03-min.jpg";
-import pic04_wide from "img/education_wide_04-min.jpg";
-import pic05_wide from "img/education_wide_05-min.jpg";
+
+// ABOUT
+import {
+  Card_01,
+  Card_02,
+  Card_03,
+  Popup_01,
+  Popup_02,
+  Popup_03
+} from "assets/imports";
+
+import {
+  Card_mobile_01,
+  Card_mobile_02,
+  Card_mobile_03,
+  Popup_mobile_01,
+  Popup_mobile_02,
+  Popup_mobile_03,
+} from "assets/imports";
+
+// EDUCATION
+import { pic01, pic02, pic03, pic04, pic05 } from 'assets/imports';
+import { pic01_wide, pic02_wide, pic03_wide, pic04_wide, pic05_wide } from 'assets/imports';
+
 
 // TEXT ------------------------------------------------------------------------------------------
 // Header and skills ---------------------------------------------------------------
@@ -36,14 +50,33 @@ export const parallaxText = [
 ];
 
 // About ---------------------------------------------------------------
-export const story = {
-  text_01:
-    "My name is Paulo Reizinho, is was born in 1986 in a small town in the middle of Africa. I currently living in Swiss land more precisely in Zurich. I took Administration with focus in accounting but thing is, I love coding and the challenges that come with it but I found it much later, but is never to late to create great things provided that you have what it takes.",
-  text_02:
-    "Ok, I wasn't born in Africa but in Portugal, but the the rest is true 😆. Well, I've been learning web Development since 2019 with highs and lows, took the self thought route because my financial situation didn't allow to do a bootcamp or more.",
-  text_03:
-    "My main tech is React and my main focus is Front End, but my learning journey will never stop.  Disclaimer, I recently got interested in blockchain and it's ecosytem.",
-};
+
+export const story = [
+  {
+    cardImg: Card_01,
+    cardImg_m: Card_mobile_01,
+    alt: "me in the jungle",
+    popupImg: Popup_01,
+    popupImg_m: Popup_mobile_01,
+    text: "My name is Paulo Reizinho, is was born in 1986 in a small town in the middle of Africa. I currently living in Swiss land more precisely in Zurich. I took Administration with focus in accounting but thing is, I love coding and the challenges that come with it but I found it much later, but is never to late to create great things provided that you have what it takes.",
+  },
+  {
+    cardImg: Card_02,
+    cardImg_m: Card_mobile_02,
+    alt: "sea",
+    popupImg: Popup_02,
+    popupImg_m: Popup_mobile_02,
+    text: "Ok, I wasn't born in Africa but in Portugal, but the the rest is true 😆. Well, I've been learning web Development since 2019 with highs and lows, took the self thought route because my financial situation didn't allow to do a bootcamp or more."
+  },
+  {
+    cardImg: Card_03,
+    cardImg_m: Card_mobile_03,
+    alt: "desert",
+    popupImg: Popup_03,
+    popupImg_m: Popup_mobile_03,
+    text: "My main tech is React and my main focus is Front End, but my learning journey will never stop.  Disclaimer, I recently got interested in blockchain and it's ecosytem."
+  },
+];
 
 // Projects ---------------------------------------------------------------
 export const projectsInfo = [
@@ -122,7 +155,7 @@ export const projectsInfo = [
 // EDUCATION ---------------------------------------------------------------
 
 
-export const courses = 
+export const courses =
   [
     {
       img_w: pic01_wide,

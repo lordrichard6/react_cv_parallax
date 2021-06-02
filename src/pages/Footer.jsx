@@ -14,9 +14,9 @@ import {
   HomeIcon,
   CopyrightIcon,
   MailIcon,
-} from "./index";
+} from "assets/imports";
 
-import { react01, tailwind, material } from "./index";
+import { react01, tailwind, material } from "assets/imports";
 
 const ContactForm = () => {
   const [name, setName] = useState("");

@@ -17,7 +17,7 @@ import {
   next,
   node,
   photoshop,
-} from "./index";
+} from "assets/imports";
 
 const Skills = () => {
   return (

@@ -13,7 +13,7 @@ import {
   secondMobile,
   third,
   thirdMobile,
-} from "./index";
+} from "assets/imports";
 
 const Header = () => {
   const [offsetY, setOffsetY] = useState(0);

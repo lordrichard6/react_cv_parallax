@@ -18,7 +18,7 @@ import {
   img08,
   img09,
   img10,
-} from "./index";
+} from "assets/imports";
 
 const Projects = () => {
   return (

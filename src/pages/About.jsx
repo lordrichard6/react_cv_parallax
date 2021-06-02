@@ -6,70 +6,46 @@ import { Section, Title } from "styles/App";
 import AboutPopup from "components/AboutPopup";
 import { story } from "assets/text";
 
-import {
-  Card_01,
-  Card_02,
-  Card_03,
-  Popup_01,
-  Popup_02,
-  Popup_03,
-  Card_mobile_01,
-  Card_mobile_02,
-  Card_mobile_03,
-  Popup_mobile_01,
-  Popup_mobile_02,
-  Popup_mobile_03,
-} from "./index";
-
 const About = () => {
   const [popup1, setPopup1] = useState(false);
   const [popup2, setPopup2] = useState(false);
   const [popup3, setPopup3] = useState(false);
 
-  const aboutCard = [
+  const connect = [
     {
       click: () => setPopup1(true),
-      src: Card_01,
-      src_m: Card_mobile_01,
-      alt: "me in the jungle"
+      src: story[0].cardImg,
+      src_m: story[0].cardImg_m,
+      alt: "me in the jungle",
+      trigger: popup1,
+      setTrigger: setPopup1,
+      image: story[0].popupImg,
+      image_m: story[0].popupImg_m,
+      text: story[0].text,
     },
     {
       click: () => setPopup2(true),
-      src: Card_02, 
-      src_m: Card_mobile_02,
-      alt: "sea", 
+      src: story[1].cardImg,
+      src_m: story[1].cardImg_m,
+      alt: "sea",
+      trigger: popup2,
+      setTrigger: setPopup2,
+      image: story[1].popupImg,
+      image_m: story[1].popupImg_m,
+      text: story[1].text,
     },
     {
       click: () => setPopup3(true),
-      src: Card_03, 
-      src_m: Card_mobile_03,
+      src: story[2].cardImg,
+      src_m: story[2].cardImg_m,
       alt: "desert",
-    }
-  ]
-
-  const popups = [
-    {
-      trigger: popup1,
-      setTrigger: setPopup1,
-      image: Popup_01,
-      image_m: Popup_mobile_01,
-      text: story.text_01,
-    },
-    {
-      trigger: popup2,
-      setTrigger: setPopup2,
-      image: Popup_02,
-      image_m: Popup_mobile_02,
-      text: story.text_02,
-    },
-    {
       trigger: popup3,
       setTrigger: setPopup3,
-      image: Popup_03,
-      image_m: Popup_mobile_03,
-      text: story.text_03,
-    }
-  ]
+      image: story[2].popupImg,
+      image_m: story[2].popupImg_m,
+      text: story[2].text,
+    },
+  ];
 
   return (
     <Section className="bg-about-mobile md:bg-about">
@@ -84,56 +60,36 @@ const About = () => {
 
       <Container>
         <Desktop>
-          {
-            aboutCard.map((n) => {
-              return (
-                <AboutCard
-                onClick={n.click}
-                src={n.src}
-                alt={n.alt}
-          />
-              )
-            })
-          }
-          {
-            popups.map((n) => {
-              return (
-                <AboutPopup
+          {connect.map((n) => {
+            return <AboutCard onClick={n.click} src={n.src} alt={n.alt} />;
+          })}
+          {connect.map((n) => {
+            return (
+              <AboutPopup
                 trigger={n.trigger}
                 setTrigger={n.setTrigger}
                 image={n.image}
                 text={n.text}
-          />
-              )
-            })
-          }
+              />
+            );
+          })}
         </Desktop>
 
         {/* MOBILE ----------------------------------------------------------------------------------------------------- */}
         <Mobile>
-        {
-            aboutCard.map((n) => {
-              return (
-                <AboutCard
-                onClick={n.click}
-                src={n.src_m}
-                alt={n.alt}
-          />
-              )
-            })
-          }
-          {
-            popups.map((n) => {
-              return (
-                <AboutPopup
+          {connect.map((n) => {
+            return <AboutCard onClick={n.click} src={n.src_m} alt={n.alt} />;
+          })}
+          {connect.map((n) => {
+            return (
+              <AboutPopup
                 trigger={n.trigger}
                 setTrigger={n.setTrigger}
                 image={n.image_m}
                 text={n.text}
-          />
-              )
-            })
-          }
+              />
+            );
+          })}
         </Mobile>
       </Container>
     </Section>
