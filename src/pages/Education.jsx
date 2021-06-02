@@ -4,7 +4,8 @@ import styled from "styled-components";
 import "react-slideshow-image/dist/styles.css";
 
 import EducationCard from "components/EducationCard";
-import { Section, Title } from "../styles/App";
+import { Section, Title } from "styles/App";
+import {courses} from 'assets/text'
 
 import {
   pic01,
@@ -19,7 +20,6 @@ import {
   pic05_wide,
 } from "./index";
 
-
 const Education = () => {
   return (
     <Section className="bg-education">
@@ -32,89 +32,89 @@ const Education = () => {
         </Parallax>
       </Title>
       <EducationContainer>
-        <div className="slide-container w-4/5 2xl:w-2/3ounded-md">
+        <div className="slide-container w-4/5 md:w-3/4 2xl:w-2/3 rounded-md">
           <Slide easing="ease" className="contents md:hidden">
             <EducationCard
               img={pic01}
-              title="Administration"
-              from="Sep 05"
-              to="Sep 08"
-              where="IEFP Portugal"
-              text="Administration in a professional school of Ponte de Sor where studied accounting, mathematics, business, etc. and worked for a year as a intern secretary/accountant."
+              title={courses[0].title}
+              from={courses[0].from}
+              to={courses[0].to}
+              where={courses[0].where}
+              text={courses[0].text}
             />
             <EducationCard
               img={pic02}
-              title="The Complete Web Developer in 2019 - Zero to Mastery"
-              from="Apr 19"
-              to="Sep 19"
-              where="Udemy"
-              text="Online course that gave me knowledge in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js React.js with Redux, PostgressSQL, SQL."
+              title={courses[1].title}
+              from={courses[1].from}
+              to={courses[1].to}
+              where={courses[1].where}
+              text={courses[1].text}
             />
             <EducationCard
               img={pic03}
-              title="CS50 - Introdution to Computer Science"
-              from="Dez 19"
-              to="Mar 20"
-              where="EDX"
-              text="Excelente course which goes deep in the basic concepts of computer science such as algorithms and data structures. And also teaches C, Python and SQL."
+              title={courses[2].title}
+              from={courses[2].from}
+              to={courses[2].to}
+              where={courses[2].where}
+              text={courses[2].text}
             />
             <EducationCard
               img={pic04}
-              title="Modern React with redux"
-              from="Dez 20"
-              to="Mar 21"
-              where="Udemy"
-              text="A very intense course with advanced concepts of REACT.js wit redux."
+              title={courses[3].title}
+              from={courses[3].from}
+              to={courses[3].to}
+              where={courses[3].where}
+              text={courses[3].text}
             />
             <EducationCard
               img={pic05}
-              title="Advanced CSS and Sass"
-              from="Jan 21"
-              to="Mar 21"
-              where="Udemy"
-              text="This course teaches tons of modern CSS techniques, advanced CSS animations, Flexbox layouts, CSS Grid layouts and more."
+              title={courses[4].title}
+              from={courses[4].from}
+              to={courses[4].to}
+              where={courses[4].where}
+              text={courses[4].text}
             />
           </Slide>
           <Slide easing="ease" className="hidden md:contents">
             <EducationCard
               img={pic01_wide}
-              title="Administration"
-              from="Sep 05"
-              to="Sep 08"
-              where="IEFP Portugal"
-              text="Administration in a professional school of Ponte de Sor where studied accounting, mathematics, business, etc. and worked for a year as a intern secretary/accountant."
+              title={courses[0].title}
+              from={courses[0].from}
+              to={courses[0].to}
+              where={courses[0].where}
+              text={courses[0].text}
             />
             <EducationCard
               img={pic02_wide}
-              title="The Complete Web Developer in 2019 - Zero to Mastery"
-              from="Apr 19"
-              to="Sep 19"
-              where="Udemy"
-              text="Online course that gave me knowledge in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js React.js with Redux, PostgressSQL, SQL."
+              title={courses[1].title}
+              from={courses[1].from}
+              to={courses[1].to}
+              where={courses[1].where}
+              text={courses[1].text}
             />
             <EducationCard
               img={pic03_wide}
-              title="CS50 - Introdution to Computer Science"
-              from="Dez 19"
-              to="Mar 20"
-              where="EDX"
-              text="Excelente course which goes deep in the basic concepts of computer science such as algorithms and data structures. And also teaches C, Python and SQL."
+              title={courses[2].title}
+              from={courses[2].from}
+              to={courses[2].to}
+              where={courses[2].where}
+              text={courses[2].text}
             />
             <EducationCard
               img={pic04_wide}
-              title="Modern React with redux"
-              from="Dez 20"
-              to="Mar 21"
-              where="Udemy"
-              text="A very intense course with advanced concepts of REACT.js wit redux."
+              title={courses[3].title}
+              from={courses[3].from}
+              to={courses[3].to}
+              where={courses[3].where}
+              text={courses[3].text}
             />
             <EducationCard
               img={pic05_wide}
-              title="Advanced CSS and Sass"
-              from="Jan 21"
-              to="Mar 21"
-              where="Udemy"
-              text="This course teaches tons of modern CSS techniques, advanced CSS animations, Flexbox layouts, CSS Grid layouts and more."
+              title={courses[4].title}
+              from={courses[4].from}
+              to={courses[4].to}
+              where={courses[4].where}
+              text={courses[4].text}
             />
           </Slide>
         </div>

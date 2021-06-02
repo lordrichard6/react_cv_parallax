@@ -150,7 +150,7 @@ export default Projects;
 
 const CardContainer = styled.div.attrs({
   className:
-    "w-full md:w-11/12 mt-10 flex flex-col flex-wrap justify-center content-center",
+    "w-full 2xl:px-28 mt-10 flex flex-col flex-wrap justify-center content-center",
 })``;
 
 const Div1 = styled.div.attrs({

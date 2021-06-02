@@ -149,7 +149,7 @@ const Desktop = styled.div.attrs({
 
 const AboutCard = styled.img.attrs({
   className:
-    "w-screen py-4 md:w-1/3 filter hover:animate-none transition duration-500 ease-in",
+    "w-screen py-4 md:w-1/3 filter transform hover:-translate-y-2 hover:animate-none transition duration-500 ease-in",
 })`
   & {
     animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;

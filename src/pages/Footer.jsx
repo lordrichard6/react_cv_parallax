@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { API_KEY } from "emailjsKey";
+import { API_KEY } from "assets/emailjsKey";
 
 import {
   GitHubIcon,
