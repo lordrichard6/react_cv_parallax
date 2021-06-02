@@ -2,7 +2,6 @@ import { Parallax } from "react-scroll-parallax";
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import { Section, Title } from "styles/App";
 import AboutPopup from "components/AboutPopup";
 import { story } from "assets/text";
 
@@ -48,13 +47,13 @@ const About = () => {
   ];
 
   return (
-    <Section className="bg-about-mobile md:bg-about">
-      <Title className="md:mt-52 2xl:mt-64">
+    <Section>
+      <Title>
         <Parallax y={[-60, 60]} x={[0, -20]} className="z-40">
-          <h1 className="text-pink-700 text-6xl xl:text-8xl">about</h1>
+          <H01>about</H01>
         </Parallax>
         <Parallax y={[60, -60]} x={[0, -20]} className="z-40">
-          <h1 className="text-blue-500 text-7xl xl:text-9xl">Me</h1>
+          <H02>Me</H02>
         </Parallax>
       </Title>
 
@@ -97,6 +96,23 @@ const About = () => {
 };
 
 export default About;
+
+const Section = styled.section.attrs({
+  className: "py-2 px-2 md:p-6 bg-center bg-cover bg-about-mobile md:bg-about",
+})``;
+
+const Title = styled.div.attrs({
+  className:
+    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl md:text-9xl md:mt-52 2xl:mt-64",
+})``;
+
+const H01 = styled.h1.attrs({
+  className: "text-pink-700 text-6xl xl:text-8xl",
+})``;
+
+const H02 = styled.h1.attrs({
+  className: "text-blue-500 text-7xl xl:text-9xl",
+})``;
 
 const Container = styled.div.attrs({
   className: "min-h-screen p-2 relative 2xl:px-40 mb-20 max-w-screen",
