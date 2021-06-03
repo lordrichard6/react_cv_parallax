@@ -38,12 +38,12 @@ export const parallaxText = [
     line_08: "no need to stay here all day",
   },
   {
-    line_01: ">These are the tech that I can work with",
-    line_02: ">HTML, CSS and JS are the base",
-    line_03: ">Every developer should know those",
-    line_04: ">React is awesome, ",
-    line_05: ">Next is a React jewel",
-    line_06: ">I can do magic with photoshop",
+    line_01: ">Hello there,",
+    line_02: ">These are my powers",
+    line_03: ">...",
+    line_04: ">React is my wife, ",
+    line_05: ">Next is my mistress",
+    line_06: ">I love creating",
     line_07: ">...",
     line_08: ">reboot",
   }
@@ -211,6 +211,6 @@ export const job = [
     company: "Feinheit",
     from: "Aug 19",
     to: "Feb 20",
-    text: "My first professional experience as a Front End Web Developer, where i worked mainly with HTML and SASS but learn Python with Django which was our main tool."
+    text: "My first professional experience as a Front End Web Developer, where I worked mainly with HTML and SASS but learn Python with Django which was our main tool."
   }
 ]

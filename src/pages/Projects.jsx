@@ -23,7 +23,7 @@ import {
 const Projects = () => {
   return (
     <Section className="bg-projects">
-      <Title className="md:mt-52">
+      <Title className="lg:mt-52">
         <Parallax y={[40, -60]} x={[-20, 0]}>
           <h1 className="text-yellow-700">const</h1>
         </Parallax>
@@ -42,7 +42,7 @@ const Projects = () => {
                 link={projectsInfo[0].link}
                 text={projectsInfo[0].text}
                 git={projectsInfo[0].git}
-                size="w-1/2 md:w-3/4"
+                size="w-1/2 lg:w-3/4"
               />
               <Card
                 img={img02}
@@ -50,7 +50,7 @@ const Projects = () => {
                 link={projectsInfo[1].link}
                 text={projectsInfo[1].text}
                 git={projectsInfo[1].git}
-                size="w-1/2 md:w-1/4"
+                size="w-1/2 lg:w-1/4"
               />
             </Div3>
             <Div3>
@@ -60,7 +60,7 @@ const Projects = () => {
                 link={projectsInfo[2].link}
                 text={projectsInfo[2].text}
                 git={projectsInfo[2].git}
-                size="w-1/2 md:w-1/4"
+                size="w-1/2 lg:w-1/4"
               />
               <Card
                 img={img04}
@@ -68,7 +68,7 @@ const Projects = () => {
                 link={projectsInfo[3].link}
                 text={projectsInfo[3].text}
                 git={projectsInfo[3].git}
-                size="w-1/2 md:w-3/4"
+                size="w-1/2 lg:w-3/4"
               />
             </Div3>
           </Div2>
@@ -78,7 +78,7 @@ const Projects = () => {
             link={projectsInfo[4].link}
             text={projectsInfo[4].text}
             git={projectsInfo[4].git}
-            size="w-1/2 md:w-1/4"
+            size="w-1/2 lg:w-1/4"
           />
         </Div1>
         <Div1>
@@ -88,7 +88,7 @@ const Projects = () => {
             link={projectsInfo[5].link}
             text={projectsInfo[5].text}
             git={projectsInfo[5].git}
-            size="w-1/2 md:w-1/4"
+            size="w-1/2 lg:w-1/4"
           />
 
           <Div2>
@@ -99,7 +99,7 @@ const Projects = () => {
                 link={projectsInfo[6].link}
                 text={projectsInfo[6].text}
                 git={projectsInfo[6].git}
-                size="w-1/2 md:w-1/4"
+                size="w-1/2 lg:w-1/4"
               />
               <Card
                 img={img08}
@@ -107,7 +107,7 @@ const Projects = () => {
                 link={projectsInfo[7].link}
                 text={projectsInfo[7].text}
                 git={projectsInfo[7].git}
-                size="w-1/2 md:w-3/4"
+                size="w-1/2 lg:w-3/4"
               />
             </Div3>
             <Div3>
@@ -117,7 +117,7 @@ const Projects = () => {
                 link={projectsInfo[8].link}
                 text={projectsInfo[8].text}
                 git={projectsInfo[8].git}
-                size="w-1/2 md:w-3/4"
+                size="w-1/2 lg:w-3/4"
               />
               <Card
                 img={img10}
@@ -125,7 +125,7 @@ const Projects = () => {
                 link={projectsInfo[9].link}
                 text={projectsInfo[9].text}
                 git={projectsInfo[9].git}
-                size="w-1/2 md:w-1/4"
+                size="w-1/2 lg:w-1/4"
               />
             </Div3>
           </Div2>

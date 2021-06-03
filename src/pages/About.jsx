@@ -98,12 +98,12 @@ const About = () => {
 export default About;
 
 const Section = styled.section.attrs({
-  className: "py-2 px-2 md:p-6 bg-center bg-cover bg-about-mobile md:bg-about",
+  className: "py-2 px-2 lg:p-6 bg-center bg-cover bg-about-mobile lg:bg-about",
 })``;
 
 const Title = styled.div.attrs({
   className:
-    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl md:text-9xl md:mt-52 2xl:mt-64",
+    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl lg:mt-52 2xl:mt-64",
 })``;
 
 const H01 = styled.h1.attrs({
@@ -119,16 +119,16 @@ const Container = styled.div.attrs({
 })``;
 
 const Mobile = styled.div.attrs({
-  className: "flex md:hidden flex-col flex-wrap justify-center content-center",
+  className: "flex lg:hidden flex-col flex-wrap justify-center content-center",
 })``;
 
 const Desktop = styled.div.attrs({
-  className: "hidden md:flex flex-row flex-wrap justify-center content-center",
+  className: "hidden lg:flex flex-row flex-wrap justify-center content-center",
 })``;
 
 const AboutCard = styled.img.attrs({
   className:
-    "w-screen py-4 md:w-1/3 filter transform hover:-translate-y-2 hover:animate-none transition duration-500 ease-in",
+    "w-screen py-4 lg:w-1/3 filter transform hover:-translate-y-2 hover:animate-none transition duration-500 ease-in",
 })`
   & {
     animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;

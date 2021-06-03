@@ -23,13 +23,13 @@ const Skills = () => {
   return (
     <Section className="bg-skills">
       <Title>
-        <Parallax y={[-61, 56]} x={[1, -23]} className="z-40">
+        <Parallax y={[-50, 50]} x={[5, -20]} className="z-40">
           <h1 className="text-pink-700">if</h1>
         </Parallax>
-        <Parallax y={[43, -57]} x={[4, -25]} className="z-40">
-          <h1 className="text-blue-500 text-6xl md:text-9xl">(skills)</h1>
+        <Parallax y={[40, -60]} x={[5, -25]} className="z-40">
+          <h1 className="text-blue-500 text-6xl lg:text-9xl">(skills)</h1>
         </Parallax>
-        <Parallax y={[80, -37]} x={[-13, 10]} className="z-40">
+        <Parallax y={[80, -40]} x={[-15, 10]} className="z-40">
           <h1 className="text-yellow-500">{"{hire}"}</h1>
         </Parallax>
       </Title>
@@ -37,12 +37,12 @@ const Skills = () => {
         <img
           src={computer}
           alt="computer"
-          className="w-96 md:w-auto hidden md:block"
+          className="w-96 lg:w-auto hidden lg:block"
         />
         <img
           src={nokia}
           alt="nokia"
-          className="w-full md:w-auto block md:hidden"
+          className="w-full lg:w-auto block lg:hidden"
         />
         <Skill>
           <img src={html} alt="html" />
@@ -53,9 +53,9 @@ const Skills = () => {
           <img src={next} alt="next" />
           <img src={node} alt="node" />
           <img src={photoshop} alt="photoshop" />
-          <div className="w-full mt-2 md:mt-20 2xl:mt-40 md:text-green-500 text-sm md:text-xl 2xl:text-3xl">
+          <div className="w-full lg:mt-20 2xl:mt-40 lg:text-green-500 text-sm md:text-lg lg:text-xl 2xl:text-3xl">
             <ReactTypingEffect
-              className="typingeffect hidden md:block"
+              className="typingeffect hidden lg:block"
               text={[
                 // parallaxText[1].map(n => n),
                 parallaxText[1].line_01,
@@ -71,7 +71,7 @@ const Skills = () => {
               eraseDelay={700}
             />
             <ReactTypingEffect
-              className="typingeffect block md:hidden font-black"
+              className="typingeffect block lg:hidden font-black"
               text={[
                 parallaxText[1].line_01,
                 parallaxText[1].line_02,
@@ -96,9 +96,9 @@ export default Skills;
 
 const Skill = styled.div.attrs({
   className:
-    "absolute w-1/3 md:w-1/4 flex flex-row flex-wrap top-52 md:top-44 left-1/3 md:left-1/3 2xl:top-80 transform skew-0 md:-skew-y-6 2xl:-skew-y-6",
+    "absolute -ml-4 w-2/5 lg:w-1/4 flex flex-row flex-wrap top-52 md:top-1/3 lg:top-44 left-1/3 lg:left-1/3 2xl:top-80 transform skew-0 lg:-skew-y-6 2xl:-skew-y-6",
 })`
   img {
-    ${tw`h-5 md:h-auto md:w-10 2xl:w-20 m-1 md:m-3 2xl:m-6 transition duration-150 transform hover:scale-150 hover:rotate-12`}
+    ${tw`h-5 md:h-10 lg:h-auto lg:w-10 2xl:w-20 m-1 lg:m-3 2xl:m-6 transition duration-150 transform hover:scale-150 hover:rotate-12`}
   }
 `;

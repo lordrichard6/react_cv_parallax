@@ -13,6 +13,6 @@ export const Section = styled.section.attrs({
 `;
 
 export const Title = styled.div.attrs({
-    className: "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl md:text-9xl"
+    className: "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl"
 })``;
 

@@ -17,7 +17,7 @@ const Education = () => {
       </Title>
       <EducationContainer>
         <SlideContainer>
-          <Slide easing="ease" className="contents md:hidden">
+          <Slide easing="ease" className="contents lg:hidden">
             {courses.map((n) => {
               return (
                 <EducationCard
@@ -31,7 +31,7 @@ const Education = () => {
               );
             })}
           </Slide>
-          <Slide easing="ease" className="hidden md:contents">
+          <Slide easing="ease" className="hidden lg:contents">
             {courses.map((n) => {
               return (
                 <EducationCard
@@ -54,15 +54,15 @@ const Education = () => {
 export default Education;
 
 const Section = styled.section.attrs({
-  className: "py-2 px-2 md:p-6 bg-education bg-center bg-cover",
+  className: "py-2 px-2 lg:p-6 bg-education bg-center bg-cover",
 })``;
 
 const Title = styled.div.attrs({
   className:
-    "w-full md:mt-52 2xl:mt-72 flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl md:text-9xl",
+    "w-full lg:mt-52 2xl:mt-72 flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl",
 })`
   h1 {
-    ${tw`text-green-400 text-5xl md:text-7xl`}
+    ${tw`text-green-400 text-5xl lg:text-7xl`}
   }
 `;
 
@@ -72,5 +72,5 @@ const EducationContainer = styled.div.attrs({
 })``;
 
 const SlideContainer = styled.div.attrs({
-  className: "slide-container w-4/5 md:w-3/4 2xl:w-2/3 rounded-md",
+  className: "slide-container w-4/5 lg:w-3/4 2xl:w-2/3 rounded-lg",
 })``;

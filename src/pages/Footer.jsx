@@ -68,7 +68,7 @@ const ContactForm = () => {
         </div>
       </FooterWrapper>
 
-      <FooterWrapper className="order-first md:order-none flex flex-col">
+      <FooterWrapper className="order-first lg:order-none flex flex-col">
         <h1>Contact me</h1>
         <p className="status-message text-opacity-100">{statusMessage}</p>
         <form id="contact-form" onSubmit={submitForm}>
@@ -102,7 +102,7 @@ const ContactForm = () => {
 
           <div className="flex justify-center m-2">
             <button
-              className="w-1/4 border-2 rounded-md bg-green-600"
+              className="w-1/4 border-2 rounded-lg bg-green-600"
               type="submit"
             >
               <MailIcon fontSize="large" />
@@ -161,7 +161,7 @@ export default ContactForm;
 
 export const Footer = styled.footer.attrs({
   className:
-    "h-auto flex pt-10 md:pt-0 space-x-2 md:space-x-12 flex-col md:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-center bg-cover",
+    "h-auto flex pt-10 lg:pt-0 space-x-2 lg:space-x-12 flex-col lg:flex-row justify-center flex-wrap content-center p-6 mb:mt-2 text-white bg-center bg-cover",
 })`
   & {
     h1 {
@@ -172,7 +172,7 @@ export const Footer = styled.footer.attrs({
 
 export const FooterWrapper = styled.div.attrs({
   className:
-    "flex flex-1 flex-col flex-wrap justify-center content-center  md:h-auto md:w-1/2 px-2 py-4",
+    "flex flex-1 flex-col flex-wrap justify-center content-center  lg:h-auto lg:w-1/2 px-2 py-4",
 })`
   & {
     h2 {
@@ -184,7 +184,7 @@ export const FooterWrapper = styled.div.attrs({
     }
 
     img {
-      ${tw`h-1/3 w-1/3 md:w-1/5 md:h-auto p-1`}
+      ${tw`h-1/3 w-1/3 lg:w-1/5 lg:h-auto p-1`}
     }
 
     a {

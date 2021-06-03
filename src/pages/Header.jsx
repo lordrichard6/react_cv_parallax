@@ -28,43 +28,43 @@ const Header = () => {
   return (
     <Hero className="max-h-screen">
       <img
-        className="h-1/2 md:h-3/4 z-30 mb-20"
+        className="h-1/2 lg:h-3/4 z-30 mb-20"
         src={me}
         alt="me"
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
       />
-      <img className="hidden md:block z-40" src={first} alt="forest" />
+      <img className="hidden lg:block z-40" src={first} alt="forest" />
       <img
-        className="block md:hidden bottom-0 z-40"
+        className="block lg:hidden bottom-0 z-40"
         src={firstMobile}
         alt="forest mobile"
       />
       <img
-        className="hidden md:block z-20"
+        className="hidden lg:block z-20"
         src={second}
         alt="mount"
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <img
-        className="block md:hidden bottom-0 z-20"
+        className="block lg:hidden bottom-0 z-20"
         src={secondMobile}
         alt="mount mobile"
         style={{ transform: `translateY(${offsetY * -0.1}px)` }}
       />
       <img
-        className="hidden md:block z-10"
+        className="hidden lg:block z-10"
         src={third}
         alt="mountains"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
       <img
-        className="block md:hidden bottom-0 z-10"
+        className="block lg:hidden bottom-0 z-10"
         src={thirdMobile}
         alt="mountains mobile"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
       <ReactTypingEffect
-        className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 md:inset-x-auto"
+        className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 lg:inset-x-auto"
         text={[
           parallaxText[0].line_01,
           parallaxText[0].line_02,
@@ -87,7 +87,7 @@ export default Header;
 
 const Hero = styled.div.attrs({
   className:
-    "relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile md:bg-header-land bg-cover",
+    "relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile lg:bg-header-land bg-cover",
 })`
   & {
     img:not(:first-child) {
