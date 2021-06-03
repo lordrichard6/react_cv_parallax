@@ -1,10 +1,9 @@
 import { Parallax } from "react-scroll-parallax";
 import styled from "styled-components";
-// import tw from "twin.macro";
+import tw from "twin.macro";
 
 import Card from "components/Card";
-import { Section, Title } from "styles/App";
-import { projectsInfo } from "assets/text";
+import { projectsInfo } from "assets/main";
 
 import {
   // title_projects,
@@ -138,6 +137,20 @@ const Projects = () => {
 export default Projects;
 
 // STYLE ----------------------------------------------------------------------------------------
+
+export const Section = styled.section.attrs({
+  className: "py-2 px-2 md:p-6 bg-center bg-cover"
+})`
+  /* & {
+      h3 {
+          ${tw`italic tracking-widest text-2xl md:text-3xl mt-10 mb-5`}
+      }
+  } */
+`;
+
+export const Title = styled.div.attrs({
+  className: "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl"
+})``;
 
 const CardContainer = styled.div.attrs({
   className:

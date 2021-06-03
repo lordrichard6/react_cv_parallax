@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import ReactTypingEffect from "react-typing-effect";
+// import ReactTypingEffect from "react-typing-effect";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { parallaxText } from "assets/text";
+// import { parallaxText } from "assets/text";
 
 import {
   me,

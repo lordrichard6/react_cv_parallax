@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import AboutPopup from "components/AboutPopup";
-import { story } from "assets/text";
+import { story } from "assets/main";
 
 const About = () => {
   const [popup1, setPopup1] = useState(false);

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
-import cat from "img/cat-min.png";
-import speech from "img/speech-min.png";
+import cat from "img/components/cat-min.png";
+import speech from "img/components/speech-min.png";
 
 const JobExperience = ({ title, company, link, from, to, text }) => {
   return (

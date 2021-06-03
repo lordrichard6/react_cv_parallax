@@ -5,7 +5,7 @@ import tw from "twin.macro";
 import "react-slideshow-image/dist/styles.css";
 
 import EducationCard from "components/EducationCard";
-import { courses } from "assets/text";
+import { courses } from "assets/main";
 
 const Education = () => {
   return (

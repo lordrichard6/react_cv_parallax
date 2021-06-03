@@ -1,4 +1,5 @@
 import { ParallaxProvider } from "react-scroll-parallax";
+import LazyLoad from "react-lazyload";
 
 import Header from "pages/Header";
 import About from "pages/About";
@@ -8,18 +9,29 @@ import Experience from "pages/Experience";
 import Skills from "./pages/Skills";
 import Footer from "pages/Footer";
 
-
 const App = () => {
   return (
     <ParallaxProvider>
       <div classeName="App">
         <Header />
-        <About />
-        <Projects />
-        <Education />
-        <Experience />
-        <Skills />
-        <Footer />
+        <LazyLoad>
+          <About />
+        </LazyLoad>
+        <LazyLoad>
+          <Projects />
+        </LazyLoad>
+        <LazyLoad>
+          <Education />
+        </LazyLoad>
+        <LazyLoad>
+          <Experience />
+        </LazyLoad>
+        <LazyLoad>
+          <Skills />
+        </LazyLoad>
+        <LazyLoad>
+          <Footer />
+        </LazyLoad>
       </div>
     </ParallaxProvider>
   );
