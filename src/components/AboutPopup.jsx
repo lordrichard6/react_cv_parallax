@@ -4,13 +4,13 @@ function AboutPopup({ image, trigger, setTrigger, text }) {
   return trigger ? (
     <Popup>
       <PopupInner>
-        <div className="w-screen md:w-3/5 rounded-lg">
+        <div className="w-screen md:w-4/5 lg:w-3/5 rounded-lg">
           <img
             src={image}
             alt="me in the jungle"
             onClick={() => setTrigger(false)}
           />
-          <span className="w-full m-0 md:mx-4 md:my-2 md:w-5/12 2xl:text-2xl">
+          <span className="w-auto m-0 md:m-2 lg:mx-4 lg:my-2 lg:w-5/12 md:text-lg 2xl:text-2xl">
             <p>{text}</p>
           </span>
         </div>

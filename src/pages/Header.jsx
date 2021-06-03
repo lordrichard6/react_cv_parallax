@@ -63,7 +63,13 @@ const Header = () => {
         alt="mountains mobile"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
-      <ReactTypingEffect
+      <div className="absolute left-10 bottom-32 lg:left-20 2xl:left-52 lg:top-4 2xl:top-20 z-40 font-black text-2xl md:text-4xl lg:text-5xl 2xl:text-8xl tracking-tighter text-white">
+        <h1 className="bg-gray-600 bg-opacity-75 rounded-md leading-none">const name = "Paulo Reizinho"</h1>
+        <h1 className="w-min transform origin-left rotate-45 bg-gray-600 bg-opacity-75 rounded-md leading-none">console.log(name)</h1>
+        <h1 className="mt-6 w-min transform origin-left rotate-90 bg-gray-600 bg-opacity-75 rounded-md leading-none">{'>DEV'}</h1>
+      </div>
+      
+      {/* <ReactTypingEffect
         className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 lg:inset-x-auto"
         text={[
           parallaxText[0].line_01,
@@ -78,7 +84,7 @@ const Header = () => {
         speed={100}
         eraseDelay={700}
         style={{ transform: `translateY(${offsetY * -0.3}px)` }}
-      />
+      /> */}
     </Hero>
   );
 };
