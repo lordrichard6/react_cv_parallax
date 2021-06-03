@@ -1,5 +1,4 @@
 // IMPORTS
-
 // ABOUT
 import {
   Card_01,
@@ -26,31 +25,31 @@ import { pic01_wide, pic02_wide, pic03_wide, pic04_wide, pic05_wide } from 'asse
 
 // TEXT ------------------------------------------------------------------------------------------
 // Header and skills ---------------------------------------------------------------
+
 export const parallaxText = [
   {
     line_01: "My name is Paulo Reizinho",
     line_02: "I am a developer",
     line_03: "Welcome to my page",
     line_04: "...",
-    line_05: "looks pretty cool i know",
+    line_05: "looks pretty cool I know",
     line_06: "scroll down to see more",
     line_07: "...",
     line_08: "no need to stay here all day",
   },
   {
-    line_01: "This are the tech that i can work with",
-    line_02: "HTML, CSS and JS are the base",
-    line_03: "Every developer should know those",
-    line_04: "React is awesome, ",
-    line_05: "Next is a React jewel",
-    line_06: "I can do magic with photoshop",
-    line_07: "...",
-    line_08: "reboot",
+    line_01: ">These are the tech that I can work with",
+    line_02: ">HTML, CSS and JS are the base",
+    line_03: ">Every developer should know those",
+    line_04: ">React is awesome, ",
+    line_05: ">Next is a React jewel",
+    line_06: ">I can do magic with photoshop",
+    line_07: ">...",
+    line_08: ">reboot",
   }
 ];
 
 // About ---------------------------------------------------------------
-
 export const story = [
   {
     cardImg: Card_01,

@@ -53,7 +53,7 @@ const Skills = () => {
           <img src={next} alt="next" />
           <img src={node} alt="node" />
           <img src={photoshop} alt="photoshop" />
-          <div className="w-full mt-2 md:mt-20 2xl:mt-40 md:text-green-500 text-sm md:text-xl 2xl:text-2xl">
+          <div className="w-full mt-2 md:mt-20 2xl:mt-40 md:text-green-500 text-sm md:text-xl 2xl:text-3xl">
             <ReactTypingEffect
               className="typingeffect hidden md:block"
               text={[
@@ -88,30 +88,6 @@ const Skills = () => {
           </div>
         </Skill>
       </div>
-
-      {/* <div>
-        <div className="m-2 flex justify-center">
-          <h1 className="text-2xl">Tecnologies</h1>
-        </div>
-        <div className="flex m-4">
-          <ul>
-            <h2 className="heading-terciary u-margin-bottom-small">
-              Proficient
-            </h2>
-            {skills.proficient.map((value) => {
-              return <li>{value}</li>;
-            })}
-          </ul>
-          <ul>
-            <h2 className="heading-terciary u-margin-bottom-small">
-              Knowledgeable
-            </h2>
-            {skills.knowledgeable.map((value) => {
-              return <li>{value}</li>;
-            })}
-          </ul>
-        </div>
-      </div> */}
     </Section>
   );
 };
@@ -120,7 +96,7 @@ export default Skills;
 
 const Skill = styled.div.attrs({
   className:
-    "absolute w-1/3 md:w-1/4 flex flex-row flex-wrap top-52 md:top-44 left-1/3 md:left-1/3 2xl:top-80 transform skew-0 md:-skew-y-6",
+    "absolute w-1/3 md:w-1/4 flex flex-row flex-wrap top-52 md:top-44 left-1/3 md:left-1/3 2xl:top-80 transform skew-0 md:-skew-y-6 2xl:-skew-y-6",
 })`
   img {
     ${tw`h-5 md:h-auto md:w-10 2xl:w-20 m-1 md:m-3 2xl:m-6 transition duration-150 transform hover:scale-150 hover:rotate-12`}
