@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import ReactTypingEffect from "react-typing-effect";
 import styled from "styled-components";
-import tw from "twin.macro";
 
 // import { parallaxText } from "assets/text";
 
@@ -26,9 +25,9 @@ const Header = () => {
   }, []);
 
   return (
-    <Hero className="max-h-screen">
+    <Hero>
       <img
-        className="h-1/2 lg:h-3/4 z-30 mb-20"
+        className="md:h-1/2 lg:h-3/4 z-30 mb-20"
         src={me}
         alt="me"
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
@@ -63,11 +62,11 @@ const Header = () => {
         alt="mountains mobile"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       />
-      <div className="absolute left-10 bottom-32 lg:left-20 2xl:left-52 lg:top-4 2xl:top-20 z-40 font-black text-2xl md:text-4xl lg:text-5xl 2xl:text-8xl tracking-tighter text-white">
-        <h1 className="bg-gray-600 bg-opacity-75 rounded-md leading-none">const name = "Paulo Reizinho"</h1>
-        <h1 className="w-min transform origin-left rotate-45 bg-gray-600 bg-opacity-75 rounded-md leading-none">console.log(name)</h1>
-        <h1 className="mt-6 w-min transform origin-left rotate-90 bg-gray-600 bg-opacity-75 rounded-md leading-none">{'>DEV'}</h1>
-      </div>
+      <Title>
+        <h1>const name = "Paulo Reizinho"</h1>
+        <h1>console.log(name)</h1>
+        <h1>{'>DEV'}</h1>
+      </Title>
       
       {/* <ReactTypingEffect
         className="typingeffect absolute bottom-10 z-50 blur-sm subpixel-antialiased text-white text-2xl xl:text-6xl inset-x-1/4 lg:inset-x-auto"
@@ -95,9 +94,90 @@ const Hero = styled.div.attrs({
   className:
     "relative h-screen flex flex-col justify-center flex-wrap content-center bg-header-land_mobile lg:bg-header-land bg-cover",
 })`
+   max-height: 100vh;
+
+   img:nth-child(1) {
+     /* display: none; */
+   }
+
+   /* img:nth-child(odd) {
+    display: none;
+   }
+
+   img:nth-child(even) {
+    display: block;
+   } */
+  
   & {
     img:not(:first-child) {
-      ${tw`w-full absolute`}
+      position: absolute;
+      width: 100%;
     }
   }
 `;
+
+const Title = styled.div`
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.05rem;
+  z-index: 40;
+  position: absolute;
+  left: 2.5rem; /* 40px */
+  top: 2rem;
+  /* bottom: 8rem; 128px */
+
+  h1 {
+    background-color: rgba(75, 85, 99, 0.75);
+    border-radius: 0.3rem;
+    transform-origin: left;
+
+    :not(:first-child) {
+      width: min-content;
+      font-size: 2rem;
+      /* transform: rotate(45deg); */
+    }
+    :last-child {
+      margin-top: 1.5rem;
+      /* transform: rotate(90deg); */
+      font-size: 5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+
+    h1 {
+      /* font-size: 1rem;
+      line-height: 3rem; */
+
+      :not(:first-child) {
+      font-size: 4rem;
+      /* transform: rotate(45deg); */
+      }
+
+      :last-child {
+      /* margin-top: 1.5rem; */
+      /* transform: rotate(90deg); */
+      font-size: 6rem;
+    }
+
+    }
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+    line-height: 1;
+    left: 5rem; /* 80px */
+    top: 1rem; 
+  }
+  @media (min-width: 1536px) {
+    font-size: 6rem;
+    line-height: 1;
+    left: 13rem; /* 208px */
+    top: 5rem;
+  }
+
+`

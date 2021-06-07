@@ -5,6 +5,9 @@ import styled from "styled-components";
 import AboutPopup from "components/AboutPopup";
 import { story } from "assets/main";
 
+import bg from 'img/backgrounds/bg_about-min.jpg'
+import bg_m from 'img/backgrounds/bg_about_mobile-min.jpg'
+
 const About = () => {
   const [popup1, setPopup1] = useState(false);
   const [popup2, setPopup2] = useState(false);
@@ -97,14 +100,33 @@ const About = () => {
 
 export default About;
 
-const Section = styled.section.attrs({
-  className: "py-2 px-2 lg:p-6 bg-center bg-cover bg-about-mobile lg:bg-about",
-})``;
+const Section = styled.section`
+
+  background-image: url(${bg_m});
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem;
+
+  @media (min-width: 1024px) {
+    padding: 1.5rem;
+    background-image: url(${bg});
+  }
+`;
 
 const Title = styled.div.attrs({
   className:
-    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl lg:mt-52 2xl:mt-64",
-})``;
+    "lg:text-9xl lg:mt-52 2xl:mt-64",
+})`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 7rem 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+`;
 
 const H01 = styled.h1.attrs({
   className: "text-pink-700 text-6xl xl:text-8xl",

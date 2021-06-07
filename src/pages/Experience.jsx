@@ -1,6 +1,5 @@
 import { Parallax } from "react-scroll-parallax";
 import styled from "styled-components";
-// import tw from 'twin.macro';
 
 import JobExperience from "components/JobExperience";
 import { job } from "assets/main";
