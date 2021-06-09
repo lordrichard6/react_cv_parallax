@@ -2,7 +2,7 @@ import { Parallax } from "react-scroll-parallax";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import Card from "components/Card";
+import ProjectCard from "components/ProjectCard";
 import { projectsInfo } from "assets/main";
 
 import {
@@ -32,10 +32,21 @@ const Projects = () => {
       </Title>
 
       <CardContainer>
+        <LatestContainer>
+          <LatestProjectCard
+            img={img01}
+            title={projectsInfo[0].title}
+            link={projectsInfo[0].link}
+            text={projectsInfo[0].text}
+            git={projectsInfo[0].git}
+            size=""
+          />
+        </LatestContainer>
+
         <Div1>
           <Div2>
             <Div3>
-              <Card
+              <ProjectCard
                 img={img01}
                 title={projectsInfo[0].title}
                 link={projectsInfo[0].link}
@@ -43,7 +54,7 @@ const Projects = () => {
                 git={projectsInfo[0].git}
                 size="w-1/2 lg:w-3/4"
               />
-              <Card
+              <ProjectCard
                 img={img02}
                 title={projectsInfo[1].title}
                 link={projectsInfo[1].link}
@@ -53,7 +64,7 @@ const Projects = () => {
               />
             </Div3>
             <Div3>
-              <Card
+              <ProjectCard
                 img={img03}
                 title={projectsInfo[2].title}
                 link={projectsInfo[2].link}
@@ -61,7 +72,7 @@ const Projects = () => {
                 git={projectsInfo[2].git}
                 size="w-1/2 lg:w-1/4"
               />
-              <Card
+              <ProjectCard
                 img={img04}
                 title={projectsInfo[3].title}
                 link={projectsInfo[3].link}
@@ -71,7 +82,7 @@ const Projects = () => {
               />
             </Div3>
           </Div2>
-          <Card
+          <ProjectCard
             img={img05}
             title={projectsInfo[4].title}
             link={projectsInfo[4].link}
@@ -81,7 +92,7 @@ const Projects = () => {
           />
         </Div1>
         <Div1>
-          <Card
+          <ProjectCard
             img={img06}
             title={projectsInfo[5].title}
             link={projectsInfo[5].link}
@@ -92,7 +103,7 @@ const Projects = () => {
 
           <Div2>
             <Div3>
-              <Card
+              <ProjectCard
                 img={img07}
                 title={projectsInfo[6].title}
                 link={projectsInfo[6].link}
@@ -100,7 +111,7 @@ const Projects = () => {
                 git={projectsInfo[6].git}
                 size="w-1/2 lg:w-1/4"
               />
-              <Card
+              <ProjectCard
                 img={img08}
                 title={projectsInfo[7].title}
                 link={projectsInfo[7].link}
@@ -110,7 +121,7 @@ const Projects = () => {
               />
             </Div3>
             <Div3>
-              <Card
+              <ProjectCard
                 img={img09}
                 title={projectsInfo[8].title}
                 link={projectsInfo[8].link}
@@ -118,7 +129,7 @@ const Projects = () => {
                 git={projectsInfo[8].git}
                 size="w-1/2 lg:w-3/4"
               />
-              <Card
+              <ProjectCard
                 img={img10}
                 title={projectsInfo[9].title}
                 link={projectsInfo[9].link}
@@ -139,7 +150,7 @@ export default Projects;
 // STYLE ----------------------------------------------------------------------------------------
 
 export const Section = styled.section.attrs({
-  className: "py-2 px-2 md:p-6 bg-center bg-cover"
+  className: "py-2 px-2 md:p-6 bg-center bg-cover",
 })`
   /* & {
       h3 {
@@ -149,13 +160,31 @@ export const Section = styled.section.attrs({
 `;
 
 export const Title = styled.div.attrs({
-  className: "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl"
+  className:
+    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl",
 })``;
 
 const CardContainer = styled.div.attrs({
   className:
     "w-full 2xl:px-28 mt-10 flex flex-col flex-wrap justify-center content-center",
 })``;
+
+const LatestContainer = styled.div`
+  ${tw`
+    flex
+    justify-center
+    mb-2
+    h-80
+    w-full
+  `}
+`;
+
+const LatestProjectCard = styled(ProjectCard)`
+  ${tw`
+    mb-4
+    w-full
+  `}
+`;
 
 const Div1 = styled.div.attrs({
   className: "div1 w-full flex flex-row justify-center content-center",
