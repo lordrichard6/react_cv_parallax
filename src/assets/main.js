@@ -65,7 +65,7 @@ export const story = [
     alt: "sea",
     popupImg: Popup_02,
     popupImg_m: Popup_mobile_02,
-    text: "Ok, I wasn't born in Africa but in Portugal, but the the rest is true 😆. Well, I've been learning web Development since 2019 with highs and lows, took the self thought route because my financial situation didn't allow to do a bootcamp or more."
+    text: "Ok, I wasn't born in Africa but in Portugal, but the the rest is true. Well, I've been learning web Development since 2019 with highs and lows."
   },
   {
     cardImg: Card_03,
@@ -73,7 +73,7 @@ export const story = [
     alt: "desert",
     popupImg: Popup_03,
     popupImg_m: Popup_mobile_03,
-    text: "My main tech is React and my main focus is Front End, but my learning journey will never stop.  Disclaimer, I recently got interested in blockchain and it's ecosytem."
+    text: "My main tech is React and my main focus is Front End, but my learning journey will never stop. I recently got interested in blockchain and it's ecosytem."
   },
 ];
 

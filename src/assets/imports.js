@@ -23,18 +23,6 @@ export { default as Popup_mobile_01 } from "img/components/about_me_popup_mobile
 export { default as Popup_mobile_02 } from "img/components/about_me_popup_mobile_02-min.png";
 export { default as Popup_mobile_03 } from "img/components/about_me_popup_mobile_03-min.png";
 
-// Pictures in Projects
-export { default as img01 } from "img/components/projects_07-min.jpg";
-export { default as img02 } from "img/components/projects_01-min.jpg";
-export { default as img03 } from "img/components/projects_02-min.jpg";
-export { default as img04 } from "img/components/projects_08-min.jpg";
-export { default as img05 } from "img/components/projects_03-min.jpg";
-export { default as img06 } from "img/components/projects_04-min.jpg";
-export { default as img07 } from "img/components/projects_05-min.jpg";
-export { default as img08 } from "img/components/projects_09-min.jpg";
-export { default as img09 } from "img/components/projects_10-min.jpg";
-export { default as img10 } from "img/components/projects_06-min.jpg";
-
 // Pictures in Education
 export { default as pic01 } from "img/components/education_01-min.jpg";
 export { default as pic02 } from "img/components/education_02-min.jpg";

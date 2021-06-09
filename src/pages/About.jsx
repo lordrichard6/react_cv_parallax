@@ -1,6 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 import React, { useState } from "react";
 import styled from "styled-components";
+import tw from "twin.macro";
 
 import AboutPopup from "components/AboutPopup";
 import { story } from "assets/main";
@@ -63,7 +64,7 @@ const About = () => {
       <Container>
         <Desktop>
           {connect.map((n) => {
-            return <AboutCard onClick={n.click} src={n.src} alt={n.alt} />;
+            return <AboutCard onClick={n.click} src={n.src} alt={n.alt}/>;
           })}
           {connect.map((n) => {
             return (
@@ -148,25 +149,19 @@ const Desktop = styled.div.attrs({
   className: "hidden lg:flex flex-row flex-wrap justify-center content-center",
 })``;
 
-const AboutCard = styled.img.attrs({
-  className:
-    "w-screen py-4 lg:w-1/3 filter transform hover:-translate-y-2 hover:animate-none transition duration-500 ease-in",
-})`
-  & {
-    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    transition-duration: 200ms;
-
-    @keyframes pulse {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.8;
-      }
-    }
-    :hover {
-      --tw-blur: blur(1px);
-    }
-  }
+const AboutCard = styled.img`
+  ${tw`
+    w-screen 
+    py-4 
+    lg:w-1/3 
+    filter 
+    transform 
+    hover:-translate-y-2 
+    hover:animate-none 
+    transition 
+    duration-500 
+    ease-in
+    cursor-pointer
+    animate-pulse
+  `}
 `;

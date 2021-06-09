@@ -6,19 +6,20 @@ import ProjectCard from "components/ProjectCard";
 import { projectsInfo } from "assets/main";
 
 import BgImg from '../img/backgrounds/bg_projects-min.jpg'
+import img01 from "img/components/projects_07-min.jpg";
+import img02 from "img/components/projects_01-min.jpg";
+import img03 from "img/components/projects_02-min.jpg";
+import img04 from "img/components/projects_08-min.jpg";
+import img05 from "img/components/projects_03-min.jpg";
+import img06 from "img/components/projects_04-min.jpg";
+import img07 from "img/components/projects_05-min.jpg";
+import img08 from "img/components/projects_09-min.jpg";
+import img09 from "img/components/projects_10-min.jpg";
+import img10 from "img/components/projects_06-min.jpg";
+import img11 from "img/components/projects_11-min.jpg";
+import img12 from "img/components/projects_12-min.jpg";
+import p12 from "img/components/p11-min.jpg";
 
-import {
-  img01,
-  img02,
-  img03,
-  img04,
-  img05,
-  img06,
-  img07,
-  img08,
-  img09,
-  img10,
-} from "assets/imports";
 
 const Projects = () => {
   return (
@@ -36,7 +37,8 @@ const Projects = () => {
 
         <LatestContainer>
           <LatestProjectCard
-            img={img01}
+            img={img11}
+            ModalImg={p12}
             title={projectsInfo[10].title}
             link={projectsInfo[10].link}
             text={projectsInfo[10].text}
@@ -45,7 +47,7 @@ const Projects = () => {
           />
           
           <LatestProjectCard
-            img={img01}
+            img={img12}
             title={projectsInfo[11].title}
             link={projectsInfo[11].link}
             text={projectsInfo[11].text}

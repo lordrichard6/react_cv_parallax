@@ -1,20 +1,14 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 import styled from "styled-components";
 import tw from "twin.macro";
+// import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
-
-const ProjectCard = ({ img, title, link, git, size }) => {
+const ProjectCard = ({ img, title, link, git, size, ModalImg }) => {
   return (
-    <CardContainer
-      className={`${size}`}
-      background={img}
-    >
+    <CardContainer className={`${size}`} background={img}>
       <InfoContainer>
-        <ProjectName 
-          href={link} 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
+        <ProjectName href={link} target="_blank" rel="noopener noreferrer">
           <h2>{title}</h2>
         </ProjectName>
         <GitIcon
@@ -24,6 +18,14 @@ const ProjectCard = ({ img, title, link, git, size }) => {
         >
           <GitHubIcon style={{ fontSize: 50 }} />
         </GitIcon>
+        {/* <Popup
+          trigger={<ModalButton className="button"> Click me </ModalButton>}
+          modal
+        >
+          <ModalContainer background={ModalImg}>
+
+          </ModalContainer>
+        </Popup> */}
       </InfoContainer>
     </CardContainer>
   );
@@ -34,7 +36,7 @@ export default ProjectCard;
 // STYLE ----------------------------------------------------------------------------------------
 
 const CardContainer = styled.div`
-  background-image: url(${({background}) => background});
+  background-image: url(${({ background }) => background});
   ${tw`
     border-2
     md:border-8
@@ -66,9 +68,7 @@ const InfoContainer = styled.div`
 
 const ProjectName = styled.a`
   ${tw`
-    flex
-    justify-center
-    mb-2
+    
   `}
 
   h2 {
@@ -101,3 +101,42 @@ const GitIcon = styled.a`
     hover:scale-125
   `}
 `;
+
+// const ModalButton = styled.button`
+//   ${tw`
+//     text-sm
+//     w-max
+//     text-black 
+//     bg-white 
+//     border-2 
+//     border-black 
+//     rounded-md 
+//     px-1 
+//     mx-1 
+//     animate-pulse 
+//     transition 
+//     duration-300 
+//     ease-in 
+//     transform 
+//     hover:scale-125
+//     md:text-xl 
+//     self-center
+//     justify-self-center
+//   `}
+// `;
+
+// const ModalContainer = styled.div`
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(0, 0, 0, 0.8),
+//       rgba(0, 0, 0, 0.4),
+//       rgba(0, 0, 0, 0.8)
+//     ),
+//     url(${({ background }) => background});
+//   ${tw`
+//     h-96
+//     w-full
+//     bg-cover
+//     bg-center
+//   `}
+// `;
