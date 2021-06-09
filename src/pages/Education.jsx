@@ -6,6 +6,7 @@ import "react-slideshow-image/dist/styles.css";
 
 import EducationCard from "components/EducationCard";
 import { courses } from "assets/main";
+import BgImg from '../img/backgrounds/bg_education-min.jpg'
 
 const Education = () => {
   return (
@@ -53,24 +54,60 @@ const Education = () => {
 
 export default Education;
 
-const Section = styled.section.attrs({
-  className: "py-2 px-2 lg:p-6 bg-education bg-center bg-cover",
-})``;
+const Section = styled.section`
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),  url(${BgImg});
+  ${tw`
+    py-2 
+    px-2 
+    lg:p-6 
+    bg-center 
+    bg-cover
+  `}
+`;
 
-const Title = styled.div.attrs({
-  className:
-    "w-full lg:mt-52 2xl:mt-72 flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl",
-})`
+const Title = styled.div`
+  ${tw`
+  w-full 
+  lg:mt-52 
+  2xl:mt-72 
+  flex 
+  flex-row 
+  justify-center 
+  my-28 
+  subpixel-antialiased 
+  font-black 
+  text-4xl 
+  lg:text-9xl
+  `}
+
   h1 {
-    ${tw`text-green-400 text-5xl lg:text-7xl`}
+    ${tw`
+      text-green-400 
+      text-5xl 
+      lg:text-7xl
+    `}
   }
 `;
 
-const EducationContainer = styled.div.attrs({
-  className:
-    "flex flex-col flex-wrap justify-center content-center pb-10 2xl:pb-20",
-})``;
+const EducationContainer = styled.div`
+  ${tw`
+  flex 
+  flex-col 
+  flex-wrap 
+  justify-center 
+  content-center 
+  pb-10 
+  2xl:pb-20
+  `}
+`;
 
 const SlideContainer = styled.div.attrs({
-  className: "slide-container w-4/5 lg:w-3/4 2xl:w-2/3 rounded-lg",
-})``;
+  className: "slide-container",
+})`
+  ${tw`
+    w-4/5 
+    lg:w-3/4 
+    2xl:w-2/3 
+    rounded-lg
+  `}
+`;
