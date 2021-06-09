@@ -44,6 +44,7 @@ const Projects = () => {
             text={projectsInfo[10].text}
             git={projectsInfo[10].git}
             size="w-2/5 lg:w-1/4"
+            modal='right center'
           />
           
           <LatestProjectCard
@@ -53,6 +54,7 @@ const Projects = () => {
             text={projectsInfo[11].text}
             git={projectsInfo[11].git}
             size="w-2/5 lg:w-1/4"
+            modal='left center'
           />
         </LatestContainer>
 
@@ -66,6 +68,7 @@ const Projects = () => {
                 text={projectsInfo[0].text}
                 git={projectsInfo[0].git}
                 size="w-1/2 lg:w-3/4"
+                modal='right center'
               />
               <ProjectCard
                 img={img02}
@@ -74,6 +77,7 @@ const Projects = () => {
                 text={projectsInfo[1].text}
                 git={projectsInfo[1].git}
                 size="w-1/2 lg:w-1/4"
+                modal='bottom center'
               />
             </Div3>
             <Div3>
@@ -84,6 +88,7 @@ const Projects = () => {
                 text={projectsInfo[2].text}
                 git={projectsInfo[2].git}
                 size="w-1/2 lg:w-1/4"
+                modal='right center'
               />
               <ProjectCard
                 img={img04}
@@ -92,6 +97,7 @@ const Projects = () => {
                 text={projectsInfo[3].text}
                 git={projectsInfo[3].git}
                 size="w-1/2 lg:w-3/4"
+                modal='top center'
               />
             </Div3>
           </Div2>
@@ -102,6 +108,7 @@ const Projects = () => {
             text={projectsInfo[4].text}
             git={projectsInfo[4].git}
             size="w-1/2 lg:w-1/4"
+            modal='left center'
           />
         </Div1>
         <Div1>
@@ -112,6 +119,7 @@ const Projects = () => {
             text={projectsInfo[5].text}
             git={projectsInfo[5].git}
             size="w-1/2 lg:w-1/4"
+            modal='right center'
           />
 
           <Div2>
@@ -123,6 +131,7 @@ const Projects = () => {
                 text={projectsInfo[6].text}
                 git={projectsInfo[6].git}
                 size="w-1/2 lg:w-1/4"
+                modal='top center'
               />
               <ProjectCard
                 img={img08}
@@ -131,6 +140,7 @@ const Projects = () => {
                 text={projectsInfo[7].text}
                 git={projectsInfo[7].git}
                 size="w-1/2 lg:w-3/4"
+                modal='left center'
               />
             </Div3>
             <Div3>
@@ -141,6 +151,7 @@ const Projects = () => {
                 text={projectsInfo[8].text}
                 git={projectsInfo[8].git}
                 size="w-1/2 lg:w-3/4"
+                modal='top center'
               />
               <ProjectCard
                 img={img10}
@@ -149,6 +160,7 @@ const Projects = () => {
                 text={projectsInfo[9].text}
                 git={projectsInfo[9].git}
                 size="w-1/2 lg:w-1/4"
+                modal='left center'
               />
             </Div3>
           </Div2>

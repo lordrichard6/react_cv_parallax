@@ -1,21 +1,17 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 import styled from "styled-components";
 import tw from "twin.macro";
-// import Popup from "reactjs-popup";
+import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
-const ProjectCard = ({ img, title, link, git, size, ModalImg }) => {
+const ProjectCard = ({ img, title, link, git, size, text, modal }) => {
   return (
     <CardContainer className={`${size}`} background={img}>
       <InfoContainer>
         <ProjectName href={link} target="_blank" rel="noopener noreferrer">
           <h2>{title}</h2>
         </ProjectName>
-        <GitIcon
-          href={git}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <GitIcon href={git} target="_blank" rel="noopener noreferrer">
           <GitHubIcon style={{ fontSize: 50 }} />
         </GitIcon>
         {/* <Popup
@@ -23,9 +19,11 @@ const ProjectCard = ({ img, title, link, git, size, ModalImg }) => {
           modal
         >
           <ModalContainer background={ModalImg}>
-
           </ModalContainer>
         </Popup> */}
+        <Popup trigger={<ModalButton>Info</ModalButton>} position={modal}>
+          <SmallText>{text}</SmallText>
+        </Popup>
       </InfoContainer>
     </CardContainer>
   );
@@ -102,28 +100,36 @@ const GitIcon = styled.a`
   `}
 `;
 
-// const ModalButton = styled.button`
-//   ${tw`
-//     text-sm
-//     w-max
-//     text-black 
-//     bg-white 
-//     border-2 
-//     border-black 
-//     rounded-md 
-//     px-1 
-//     mx-1 
-//     animate-pulse 
-//     transition 
-//     duration-300 
-//     ease-in 
-//     transform 
-//     hover:scale-125
-//     md:text-xl 
-//     self-center
-//     justify-self-center
-//   `}
-// `;
+const ModalButton = styled.button`
+  ${tw`
+    text-sm
+    w-max
+    text-black
+    bg-white
+    border-2
+    border-black
+    rounded-md
+    px-1
+    mx-1
+    animate-pulse
+    transition
+    duration-300
+    ease-in
+    transform
+    hover:scale-125
+    md:text-base
+    self-center
+    justify-self-center
+  `}
+`;
+
+const SmallText = styled.div`
+  ${tw`
+    text-base
+    font-thin
+    md:text-xl
+  `}
+`;
 
 // const ModalContainer = styled.div`
 //   background-image: linear-gradient(
