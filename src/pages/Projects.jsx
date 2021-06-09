@@ -5,8 +5,9 @@ import tw from "twin.macro";
 import ProjectCard from "components/ProjectCard";
 import { projectsInfo } from "assets/main";
 
+import BgImg from '../img/backgrounds/bg_projects-min.jpg'
+
 import {
-  // title_projects,
   img01,
   img02,
   img03,
@@ -21,17 +22,18 @@ import {
 
 const Projects = () => {
   return (
-    <Section className="bg-projects">
-      <Title className="lg:mt-52">
+    <Section>
+      <TitleContainer>
         <Parallax y={[40, -60]} x={[-20, 0]}>
-          <h1 className="text-yellow-700">const</h1>
+          <FirstTitle>const</FirstTitle>
         </Parallax>
         <Parallax y={[-60, 40]} x={[-16, 10]}>
-          <h1 className="text-blue-500 text-6xl">projects</h1>
+          <SecondTitle>projects</SecondTitle>
         </Parallax>
-      </Title>
+      </TitleContainer>
 
       <CardContainer>
+
         <LatestContainer>
           <LatestProjectCard
             img={img01}
@@ -39,7 +41,6 @@ const Projects = () => {
             link={projectsInfo[0].link}
             text={projectsInfo[0].text}
             git={projectsInfo[0].git}
-            size=""
           />
         </LatestContainer>
 
@@ -147,27 +148,58 @@ const Projects = () => {
 
 export default Projects;
 
-// STYLE ----------------------------------------------------------------------------------------
 
-export const Section = styled.section.attrs({
-  className: "py-2 px-2 md:p-6 bg-center bg-cover",
-})`
-  /* & {
-      h3 {
-          ${tw`italic tracking-widest text-2xl md:text-3xl mt-10 mb-5`}
-      }
-  } */
+// STYLE ----------------------------------------------------------------------------------------
+const Section = styled.section`
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),  url(${BgImg});
+  ${tw`
+    p-2 
+    md:p-6 
+    bg-center 
+    bg-cover
+  `}
 `;
 
-export const Title = styled.div.attrs({
-  className:
-    "w-full flex flex-row justify-center my-28 subpixel-antialiased font-black text-4xl lg:text-9xl",
-})``;
+const TitleContainer = styled.div`
+  ${tw`
+    w-full 
+    flex 
+    flex-row 
+    justify-center 
+    my-28 
+    subpixel-antialiased 
+    font-black 
+    text-4xl 
+    lg:text-9xl
+    lg:mt-52
+  `}
+`;
 
-const CardContainer = styled.div.attrs({
-  className:
-    "w-full 2xl:px-28 mt-10 flex flex-col flex-wrap justify-center content-center",
-})``;
+const FirstTitle = styled.h1`
+  ${tw`
+    text-yellow-700
+  `}
+`;
+
+const SecondTitle = styled.h1`
+  ${tw`
+    text-blue-500 
+    text-6xl
+  `}
+`;
+
+const CardContainer = styled.div`
+  ${tw`
+    w-full  
+    mt-10 
+    flex 
+    flex-col 
+    flex-wrap 
+    justify-center 
+    content-center
+    2xl:px-28
+  `}
+`;
 
 const LatestContainer = styled.div`
   ${tw`
@@ -186,14 +218,30 @@ const LatestProjectCard = styled(ProjectCard)`
   `}
 `;
 
-const Div1 = styled.div.attrs({
-  className: "div1 w-full flex flex-row justify-center content-center",
-})``;
+const Div1 = styled.div`
+  ${tw`
+    w-full 
+    flex 
+    flex-row 
+    justify-center 
+    content-center
+  `}
+`;
 
-const Div2 = styled.div.attrs({
-  className: "div2 w-3/4 h-96 flex flex-col",
-})``;
+const Div2 = styled.div`
+  ${tw`
+    w-3/4 
+    h-96 
+    flex 
+    flex-col
+  `}
+`;
 
-const Div3 = styled.div.attrs({
-  className: "div3 w-full h-1/2 flex flex-row",
-})``;
+const Div3 = styled.div`
+  ${tw`
+    w-full 
+    h-1/2 
+    flex 
+    flex-row
+  `}
+`;
