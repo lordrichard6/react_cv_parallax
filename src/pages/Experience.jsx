@@ -15,7 +15,7 @@ const Experience = () => {
         <Parallax y={[45, -40]} x={[0, -43]}>
           <MiddleTitle>experience</MiddleTitle>
         </Parallax>
-        <Parallax y={[-40, 0]} x={[-100, 0]}>
+        <Parallax y={[-40, 0]} x={[-60, -10]}>
           <RedTitle>{"</h1>"}</RedTitle>
         </Parallax>
       </TitleContainer>
@@ -64,7 +64,7 @@ const TitleContainer = styled.div`
     md:mb-56 
     subpixel-antialiased 
     font-black 
-    text-4xl 
+    text-3xl 
     lg:text-9xl
   `}
 `;

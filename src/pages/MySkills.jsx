@@ -28,7 +28,7 @@ const MySkills = () => {
         <Parallax y={[40, -60]} x={[5, -25]} className="z-40">
           <SecondTitle>(skills)</SecondTitle>
         </Parallax>
-        <Parallax y={[80, -40]} x={[-15, 10]} className="z-40">
+        <Parallax y={[80, -40]} x={[-15, 5]} className="z-40">
           <ThirdTitle>{"{hire}"}</ThirdTitle>
         </Parallax>
       </TitleContainer>

@@ -194,7 +194,7 @@ const FirstTitle = styled.h1`
 const SecondTitle = styled.h1`
   ${tw`
     text-blue-500 
-    text-6xl
+    text-5xl
   `}
 `;
 
