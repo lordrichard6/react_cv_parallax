@@ -37,10 +37,20 @@ const Projects = () => {
         <LatestContainer>
           <LatestProjectCard
             img={img01}
-            title={projectsInfo[0].title}
-            link={projectsInfo[0].link}
-            text={projectsInfo[0].text}
-            git={projectsInfo[0].git}
+            title={projectsInfo[10].title}
+            link={projectsInfo[10].link}
+            text={projectsInfo[10].text}
+            git={projectsInfo[10].git}
+            size="w-2/5 lg:w-1/4"
+          />
+          
+          <LatestProjectCard
+            img={img01}
+            title={projectsInfo[11].title}
+            link={projectsInfo[11].link}
+            text={projectsInfo[11].text}
+            git={projectsInfo[11].git}
+            size="w-2/5 lg:w-1/4"
           />
         </LatestContainer>
 
@@ -204,16 +214,18 @@ const CardContainer = styled.div`
 const LatestContainer = styled.div`
   ${tw`
     flex
+    flex-wrap
+    space-x-2
     justify-center
     mb-2
     h-80
+    min-h-full
     w-full
   `}
 `;
 
 const LatestProjectCard = styled(ProjectCard)`
   ${tw`
-    mb-4
     w-full
   `}
 `;

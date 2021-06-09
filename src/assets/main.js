@@ -148,7 +148,22 @@ export const projectsInfo = [
     link: "https://pauloreizinho-flappybird.netlify.com/",
     text: "Vanila JS, HTML, CSS, Game",
     git: "https://github.com/lordrichard6/flappyProj",
+  },
+  {
+
+    title: "ThreeJS",
+    link: "https://lordrichard-threejs-sphere.netlify.app/",
+    text: "",
+    git: "https://github.com/lordrichard6/threejs_sphere",
+  },
+  {
+
+    title: "FastRent",
+    link: "https://lordrichard-rentfast.netlify.app/",
+    text: "",
+    git: "https://github.com/lordrichard6/rent-fast",
   }
+
 ]
 
 // EDUCATION ---------------------------------------------------------------
