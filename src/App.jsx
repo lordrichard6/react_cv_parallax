@@ -6,7 +6,7 @@ import About from "pages/About";
 import Projects from "pages/Projects";
 import Education from "pages/Education";
 import Experience from "pages/Experience";
-import Skills from "./pages/Skills";
+import MySkills from "./pages/MySkills";
 import Footer from "pages/Footer";
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
           <Experience />
         </LazyLoad>
         <LazyLoad>
-          <Skills />
+          <MySkills />
         </LazyLoad>
         <LazyLoad>
           <Footer />
