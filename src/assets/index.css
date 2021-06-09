@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -13,7 +15,7 @@
 body {
     box-sizing: border-box;
     background: #eee;
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", "Lato", sans-serif;
     font-weight: 400;
 }
 

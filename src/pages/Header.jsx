@@ -118,7 +118,7 @@ const Hero = styled.div.attrs({
 
 const Title = styled.div`
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 900;
   letter-spacing: -0.05rem;

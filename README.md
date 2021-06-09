@@ -1,6 +1,7 @@
 # My Personal WebPage powered by React.js
 
 I created this portfolio using a simple and dynamic design, with parallax techniques.
+Hosted here [Paulo Reizinho](https://www.pauloreizinho.com/)
 
 ## Dependencies
 
