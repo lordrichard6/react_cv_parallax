@@ -46,16 +46,6 @@ const Projects = () => {
             size="w-2/5 lg:w-1/4"
             modal='right center'
           />
-          
-          <LatestProjectCard
-            img={img12}
-            title={projectsInfo[11].title}
-            link={projectsInfo[11].link}
-            text={projectsInfo[11].text}
-            git={projectsInfo[11].git}
-            size="w-2/5 lg:w-1/4"
-            modal='left center'
-          />
         </LatestContainer>
 
         <Div1>
